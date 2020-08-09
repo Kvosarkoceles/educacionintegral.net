@@ -1,0 +1,24 @@
+s:1969:"<p> Un rol es un conjunto de permisos definidos para todo el sitio que usted puede asignar a usuarios específicos en contextos específicos. </p>
+
+<p> Por ejemplo, puede tener un rol denominado "Profesor" que se ajusta para permitir que los profesores (y no otros usuarios) puedan hacer ciertas cosas. Una vez que dicho rol existe, usted puede asignarlo a algún usuario del curso y convertirlo en "Profesor" de ese curso. Usted podría asimismo asignar el rol a un usuario en la categoría de cursos y convertirlo en "Profesor" de todos los cursos pertenecientes a tal categoría, o asignar el rol a un usuario simplemente en un foro, restringiendo las posibilidades a ese foro en concreto. </p>
+
+<p> Un rol debe tener un <strong>nombre</strong>.
+
+Si necesita denominar el rol en varios idiomas, puede utilizar la sintaxis multi-idioma ('multilang') si así lo desea, como, por ejemplo </p><pre>
+<span lang="en" class="multilang">Teacher</span>
+<span lang="es" class="multilang">Profesor</span>
+<span lang="fr" class="multilang">Enseignant</span>
+
+</pre>
+
+
+<pre> &lt;span lang="fr" class="multilang"&gt;Enseignant&lt;/span&gt;  </pre><p>&lt;span lang="de" class="multilang"&gt;Dozent&lt;/span&gt; </p> <p>&lt;span lang="en" class="multilang"&gt;Teacher&lt;</p> <p>/span&gt; &lt;span lang="es" class="multilang"&gt;Profesor&lt;/span&gt; </p>
+
+<p>
+
+Si lo hace así, asegúrese de que el filtrado de cadenas (plugins/filtros/gestionar_filtros/contenido multi-lenguaje) está activado en su administración. </p>
+
+<p> El <strong>nombre corto</strong> es necesario para otros plugins de Moodle que puedan necesitar referirse a sus Roles (e.g., cuando se cargan usuarios desde un archivo o cuando se llevan a cabo inscripciones a través de un plugin de inscripcion), por lo que LE RECOMENDAMOS QUE NO LO CAMBIE. </p>
+
+<p>La <strong>descripción</strong> consiste en describir el rol con sus propias palabras, de forma que cualquiera entienda en qué consiste.ciones. </p>
+";

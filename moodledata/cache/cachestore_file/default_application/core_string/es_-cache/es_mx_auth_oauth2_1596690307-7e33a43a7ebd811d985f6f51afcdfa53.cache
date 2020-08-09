@@ -1,0 +1,43 @@
+a:45:{s:13:"accountexists";s:213:"Ya existe un usuario en este sitio con este nombre_de_usuario. Si esta es su cuenta, ingrese al escribir su nombre_de_usuario y contraseña y añádalo como un ingreso enlazado mediante su página de preferencias.";s:22:"auth_oauth2description";s:45:"Autenticación basada en estándares OAuth 2.";s:19:"auth_oauth2settings";s:42:"Configuraciones de autenticación OAuth 2.";s:19:"confirmaccountemail";s:739:"Hola {$a->fullname},
+
+Se ha soliciitado una nueva cuenta en '{$a->sitename}'
+usando su dirección Email.
+
+Para confirmar su nueva cuenta, por favor vaya a esta dirección web:
+
+{$a->link}
+
+En la mayoría de los programas de correo, esto debería de aparecer como un enlace de color azul,
+al cual Usted puede simplemente hacerle click. Si eso no funciona,
+entonces copie y pegue la dirección en la línea para dirección
+ en la parte superior de su ventana del navegador web.
+
+Si Usted necesita ayuda, por favor póngase en contacto con el administrador del sitio,
+{$a->admin}
+
+Si Usted no hizo esto, alguien más podría estar intentando comprometer su cuenta. Por favor póngase en contacto con el administrador del sitio inmediatamente.";s:26:"confirmaccountemailsubject";s:29:"{$a}: confirmación de cuenta";s:19:"confirmationinvalid";s:155:"El enlace para confirmación es, o inválido, o caduco. Por favor inicie el proceso para ingresar nuevamente para generar  un nuevo email de confirmación.";s:19:"confirmationpending";s:54:"Esta cuenta está pendiente de confirmación de Email.";s:23:"confirmlinkedloginemail";s:831:"Hola {$a->fullname},
+
+Se ha hecho una solicitud para enlazar el ingreso para {$a->issuername} de
+{$a->linkedemail} a su cuenta en '{$a->sitename}' usando su dirección Email.
+
+Para confirmar esta solicitud y enlazar estos ingresos, por favor vaya a esta dirección web:
+
+{$a->link}
+
+En la mayoría de los programas de correo, esto debería de aparecer como un enlace de color azul, al cual Usted puede simplemente hacerle clic. Si eso no funciona, entonces copie y pegue la dirección en la línea para dirección en la parte superior de su ventana del navegador web.
+
+Si Usted necesita ayuda, por favor póngase en contacto con el administrador del sitio,
+{$a->admin}
+
+Si Usted no hizo esto, alguien más podría estar intentando comprometer su cuenta. Por favor póngase en contacto con el administrador del sitio inmediatamente.";s:30:"confirmlinkedloginemailsubject";s:39:"{$a}: confirmación de ingreso enlazado";s:21:"createaccountswarning";s:190:"Este plugin de autenticación le permite a los  usuarios el crear cuentas en su sitio. Usted podría querer habilitar la configuración "authpreventaccountcreation" si Usted usa este plugin.";s:20:"createnewlinkedlogin";s:33:"Enlazar a una nueva cuenta ({$a})";s:16:"emailconfirmlink";s:19:"Enlazar sus cuentas";s:20:"emailconfirmlinksent";s:421:"<p>Se encontó una cuenta existente con esta dirección Email pero todavía no está enlazada.</p>
+<p>Las cuentas deben de ser enlazadas antes de que Usted pueda ingresar.</p>
+<p>Debería de haberse enviado un Email a su dirección en <b>{$a}</b></p>
+<p>Contiene instrucciones f´sencillas para enlazar sus cuentas.</p>
+<p>Si Usted continúa teniendo dificultades, póngase en contacto con el administrador del sitio.</p>";s:23:"emailpasswordchangeinfo";s:340:"Hola {$a->firstname},
+
+Alguien (probablemente Usted) ha solicitado una nueva contraseña para su cuenta en '{$a->sitename}'.
+
+Sin embargo, su contraseña no puede ser reiniciada porque Usted está usando su cuenta en otro sitio para ingresar.
+
+Por favor ingrese como antes, usando el enlace en la página para ingresar al sitio.
+{$a->admin}";s:30:"emailpasswordchangeinfosubject";s:47:"{$a}: Cambiar información sobre la contraseña";s:4:"info";s:14:"Cuenta externa";s:6:"issuer";s:16:"Servicio OAuth 2";s:13:"issuernologin";s:42:"El emisor no puede se rusado para ingresar";s:12:"linkedlogins";s:18:"Ingresos enlazados";s:16:"linkedloginshelp";s:29:"Ayuda con ingresos enlazados.";s:25:"loginerror_userincomplete";s:152:"La información del usuario regresada no contenía un nombre_de_usuario y dirección Email. El servicio OAuth 2 puede estar configurado incorrectamente.";s:21:"loginerror_nouserinfo";s:101:"No se regresó información del usuario. El servicio OAuth 2 puede estar configurado incorrectamente.";s:24:"loginerror_invaliddomain";s:53:"La dirección Email no está permitida en este sitio.";s:31:"loginerror_authenticationfailed";s:36:"Falló el proceso de autenticación.";s:31:"loginerror_cannotcreateaccounts";s:54:"No pudo encontrase una cuenta con su dirección Email.";s:18:"noissuersavailable";s:94:"Ninguno de los servicios OAuth 2 configurados le permite a Usted enlazar cuentas para ingresar";s:16:"notloggedindebug";s:42:"Falló el intento de ingreso. Razón: {$a}";s:18:"notwhileloggedinas";s:92:"Los ingresos enlazados no pueden ser gestionados mientras esté ingresado como otro usuario.";s:25:"oauth2:managelinkedlogins";s:44:"Gestionar cuentas de ingreso propio enlazado";s:10:"notenabled";s:68:"Lo sentimos, el plugin de autenticación OAuth 2 no está habilidato";s:17:"plugindescription";s:258:"Este plugin de autenticación muestra una lista de los provedores de identidad configurados en la página para ingresar a Moodle. El seleccionar un provedor de identidad le permite a los usuarios el ingresar con sus credenciales desde un provedor de OAuth 2.";s:10:"pluginname";s:7:"OAuth 2";s:13:"alreadylinked";s:65:"Esta cuenta externa ya está enlazada a una cuenta en este sitio.";s:28:"privacy:metadata:auth_oauth2";s:22:"Autenticación OAuth 2";s:42:"privacy:metadata:auth_oauth2:authsubsystem";s:60:"Este plugin está conectado al subsistema de autenticación.";s:41:"privacy:metadata:auth_oauth2:confirmtoken";s:35:"La ficha (token) para confirmación";s:48:"privacy:metadata:auth_oauth2:confirmtokenexpires";s:69:"El sello de tiempo de caducidad de la ficha (token) de confirmación.";s:34:"privacy:metadata:auth_oauth2:email";s:41:"El Email externo que mapea a esta cuenta.";s:37:"privacy:metadata:auth_oauth2:issuerid";s:55:"La ID del emisor de OAuth 2 para este ingreso OAunth 2.";s:45:"privacy:metadata:auth_oauth2:tableexplanation";s:61:"Las cuentas OAuth 2 enlazadas a una cuenta de usuario Moodle.";s:40:"privacy:metadata:auth_oauth2:timecreated";s:80:"El sello de tiempo cuando la cuenta del usuario fue enlazada al ingreso OAuth 2.";s:41:"privacy:metadata:auth_oauth2:timemodified";s:55:"El sello de tiempo cuando este registro fue modificado.";s:35:"privacy:metadata:auth_oauth2:userid";s:74:"La ID de la cuenta de usuario a la cual está ligada este ingreso OAuth 2.";s:41:"privacy:metadata:auth_oauth2:usermodified";s:44:"La ID del usuario que modificó esta cuenta.";s:37:"privacy:metadata:auth_oauth2:username";s:53:"El nombre_de_usuario externo que mapea a esta cuenta.";}

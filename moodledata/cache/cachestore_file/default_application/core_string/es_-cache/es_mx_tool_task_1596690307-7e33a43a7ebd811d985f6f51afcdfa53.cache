@@ -1,0 +1,27 @@
+a:51:{s:4:"asap";s:27:"Tan Pronto Como Sea Posible";s:10:"adhocempty";s:39:"La cola de trabajos ad-hoc está vacía";s:14:"adhocqueuesize";s:46:"La cola de trabajos ad-hoc tiene {$a} trabajos";s:13:"adhocqueueold";s:68:"El trabajo más antiguo es de {$a->age} lo cual es más de {$a->max}";s:20:"backtoscheduledtasks";s:29:"Regresar a trabajos agendados";s:8:"blocking";s:10:"Bloqueando";s:25:"cannotfindthepathtothecli";s:192:"No se puede encontrar la ruta al ejecutable PHP CLI por lo que se abortó el trabajo. Ajuste la configuración "Ruta hacia PHP CLI" en Administración del sitio / Servidor / Rutas del sistema.";s:15:"checkadhocqueue";s:23:"Cola de trabajos ad-hoc";s:16:"checkcronrunning";s:15:"Cron ejecutando";s:17:"checkmaxfaildelay";s:33:"Retraso de falla máx del trabajo";s:22:"clearfaildelay_confirm";s:160:"¿Está seguro de querer borrar el retraso por fallo para el quehacer '{$a}'? Después de borrar el retraso, el quehacer correrá de acuerdo a su propia agenda.";s:9:"component";s:10:"Componente";s:13:"corecomponent";s:7:"Núcleo";s:6:"cronok";s:39:"Cron está ejecutándose frecuentemente";s:7:"default";s:11:"Por defecto";s:8:"defaultx";s:20:"Predeterminado: {$a}";s:8:"disabled";s:13:"Deshabilitado";s:13:"disabled_help";s:184:"Los trabajos agendados deshabilitados no son ejecutados desde cron; sin embargo, todavía podrían ejecutarse manualmente mediante la herramienta CLI de Interfaz por Línea de Comando.";s:16:"edittaskschedule";s:30:"Editar agenda de trabajo: {$a}";s:12:"enablerunnow";s:60:"Permitir  'Ejecutar ahora' (Run now) para trabajos agendados";s:17:"enablerunnow_desc";s:400:"Permitirle a administradores el ejecutar un solo trabajo agendado inmediatamente, en lugar de esperar para que ejecute como está agendado. La característica requiere que esté configurada 'Ruta a PHP CLI' (pathto´php) en las Rutas del sistema. El trabajo ejecuta en el servidor web, por lo que Usted podría desear deshabilitar esta característica para evitar problemas potenciales de desempeño.";s:9:"faildelay";s:17:"Retraso por falla";s:13:"fromcomponent";s:20:"Del componente: {$a}";s:11:"lastruntime";s:15:"Última corrida";s:11:"nextruntime";s:17:"Siguiente corrida";s:14:"plugindisabled";s:20:"Plugin deshabilitado";s:10:"pluginname";s:34:"Configuración de trabajo agendado";s:19:"resettasktodefaults";s:49:"Reiniciar agenda de trabajo a valores por defecto";s:24:"resettasktodefaults_help";s:113:"Esto descartará cualquier cambio local y revertirá la agenda para este trabajo a sus configuraciones originales";s:6:"runnow";s:14:"Ejecutar ahora";s:8:"runagain";s:17:"Ejecutar de nuevo";s:14:"runnow_confirm";s:173:"¿Está Usted seguro de querer correr este trabajo agendado ‘{$a}’ ahora? El trabajo agendado correrá en el servidor web y puede tomar bastante tiempo para completarse.";s:10:"runpattern";s:14:"Correr patrón";s:14:"scheduledtasks";s:18:"Trabajos agendados";s:28:"scheduledtaskchangesdisabled";s:106:"Se han impedido modificaciones a la lista de trabajos (''tasks'') agendados en la configuración de Moodle";s:12:"taskdisabled";s:21:"Trabajo deshabilitado";s:12:"taskfailures";s:24:"{$a} trabajo(s) fallando";s:8:"tasklogs";s:21:"Bitácoras de trabajo";s:14:"tasknofailures";s:24:"No hay trabajos fallando";s:15:"taskscheduleday";s:4:"Día";s:20:"taskscheduleday_help";s:309:"Campo de día del mes para agenda de trabajo. El campo usa el mismo formato que el cron para Unix. Algunos ejemplos son:
+
+* <strong>*</strong> Cada día
+* <strong>*/2</strong> Un día sí y otro no
+* <strong>1</strong> El primer día de cada mes
+* <strong>1,15</strong> El primer día y el día 15 de cada mes";s:21:"taskscheduledayofweek";s:17:"Día de la semana";s:26:"taskscheduledayofweek_help";s:269:"Campo de día de la semana para agenda de trabajo. El campo usa el mismo formato que el cron para Unix. Algunos ejemplos son:
+
+* <strong>*</strong> Cada día
+* <strong>0</strong> Cada Domingo
+* <strong>6</strong> Cada Sábado
+* <strong>1,5</strong> Cada Lunes y Viernes";s:16:"taskschedulehour";s:4:"Hora";s:21:"taskschedulehour_help";s:295:"Campo de hora para agenda de trabajo. El campo usa el mismo formato que el cron para Unix. Algunos ejemplos son:
+
+* <strong>*</strong> Cada hora
+* <strong>*/2</strong> Cada 2 horas
+* <strong>2-10</strong> Cada hora desde las 2am hasta las 10am (inclusive)
+* <strong>2,6,9</strong> 2am, 6am y 9am";s:18:"taskscheduleminute";s:6:"Minuto";s:23:"taskscheduleminute_help";s:331:"Campo de minuto para agenda de trabajo. El campo usa el mismo formato que el cron para Unix. Algunos ejemplos son:
+
+* <strong>*</strong> Cada minuto
+* <strong>*/5</strong> Cada 5 minutos
+* <strong>2-10</strong> Cada minuto entre 2 y 10 después de la hora (inclusive)<
+* <strong>2,6,9</strong>  2, 6 y 9 minutos después de la hora";s:17:"taskschedulemonth";s:3:"Mes";s:22:"taskschedulemonth_help";s:259:"Campo de mes para agenda de trabajo. El campo usa el mismo formato que el cron para Unix. Algunos ejemplos son:
+
+
+* <strong>*</strong> Cada mes
+* <strong>*/2</strong> Un mes si y otro no
+* <strong>1</strong> Cada Enero
+* <strong>1,5</strong> Cada Enero y Mayo";s:16:"privacy:metadata";s:82:"El plugin de Configuración de trabajo agendado no almacena ningún dato personal.";s:8:"viewlogs";s:24:"Ver bitácoras para {$a}";}

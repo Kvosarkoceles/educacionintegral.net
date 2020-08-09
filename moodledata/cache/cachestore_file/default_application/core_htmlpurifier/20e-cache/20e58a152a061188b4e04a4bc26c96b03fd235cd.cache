@@ -1,0 +1,7 @@
+s:392:"<p>Los permisos son configuraciones de capacidad. Hay 4 opciones:</p>
+
+<ul><li>No ajustado</li>
+<li>Permitir: se concede el permiso para la capacidad.</li>
+<li>Prevenir: se retira el permiso para la capacidad, incluso aunque se admita en un contexto más alto.</li>
+<li>Prohibir: se retira por completo el permiso y no se puede anular en ningún nivel más bajo (más específico).</li>
+</ul>";

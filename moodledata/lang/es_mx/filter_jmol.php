@@ -1,0 +1,276 @@
+<?php
+
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'filter_jmol', language 'es_mx', branch 'MOODLE_30_STABLE'
+ *
+ * @package   filter_jmol
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['actinium'] = 'Actinio';
+$string['actinoids'] = 'actinioides';
+$string['adenine'] = 'Adenina';
+$string['alanine'] = 'Alanina';
+$string['allfeatures'] = 'Todas las carecterísticas';
+$string['aluminium'] = 'Aluminio';
+$string['americium'] = 'Americio';
+$string['antialias'] = 'Antialias';
+$string['antimony'] = 'Antimonio';
+$string['arginine'] = 'Arginina';
+$string['argon'] = 'Argón';
+$string['arsenic'] = 'Arsénico';
+$string['asparagine'] = 'Asparagina';
+$string['aspartic'] = 'Ácido aspártico';
+$string['astatine'] = 'Ástato';
+$string['atoms'] = 'Átomos';
+$string['atoms_desc'] = 'Etiquetas de átomos';
+$string['axes'] = 'Ejes';
+$string['axes_desc'] = 'Ejes cristalográficos';
+$string['backbone'] = 'Esqueleto';
+$string['backbone_desc'] = 'Solamente esqueleto';
+$string['backgroundcolour'] = 'Color del fondo';
+$string['ballandstick'] = 'Bola y palito';
+$string['barium'] = 'Bario';
+$string['berkelium'] = 'Berkelio';
+$string['beryllium'] = 'Berilio';
+$string['bismuth'] = 'Bismuto';
+$string['blackbackground'] = 'Fondo negro';
+$string['bohrium'] = 'Bohrio';
+$string['boron'] = 'Boro';
+$string['bromine'] = 'Bromo';
+$string['cadmium'] = 'Cadmio';
+$string['caesium'] = 'Cesio';
+$string['calcium'] = 'Calcio';
+$string['californium'] = 'Californio';
+$string['carbon'] = 'Carbono';
+$string['cartoon'] = 'Caricatura';
+$string['cartoon_desc'] = 'Caricatura de estructura secundaria';
+$string['cartoonsastrace'] = 'Caricaturas como trazado';
+$string['cerium'] = 'Cerio';
+$string['chlorine'] = 'Cloro';
+$string['chromium'] = 'Cromo';
+$string['cobalt'] = 'Cobalto';
+$string['colourscheme'] = 'Esquema de color';
+$string['copernicium'] = 'Copernicio';
+$string['copper'] = 'Cobre';
+$string['crystallography'] = 'Cristalografía';
+$string['curium'] = 'Curio';
+$string['cysteine'] = 'Cisteína';
+$string['cystine'] = 'Cistina';
+$string['cytosine'] = 'Citosina';
+$string['darmstadtium'] = 'Darmstadio';
+$string['dblock'] = 'bloque-d';
+$string['display'] = 'Mostrar';
+$string['displayconsole'] = 'Mostrar consola';
+$string['displaymenu'] = 'Mostrar menú';
+$string['displaytechnology'] = 'Mostrar tecnología';
+$string['dots'] = 'Puntos';
+$string['dots_desc'] = 'Superficie de van der Waals punteada';
+$string['download'] = 'Descargar';
+$string['downloadpngj'] = 'Descargar estructura PNGJ + archivo de imagen';
+$string['dubnium'] = 'Dubnio';
+$string['dysprosium'] = 'Disprosio';
+$string['einsteinium'] = 'Einstenio';
+$string['ellipsoidsasdots'] = 'Elipsoides como puntos';
+$string['erbium'] = 'Erbio';
+$string['europium'] = 'Europio';
+$string['fblock'] = 'bloque-f';
+$string['fermium'] = 'Fermio';
+$string['filtername'] = 'Jmol';
+$string['fluorine'] = 'Flúor';
+$string['francium'] = 'Francio';
+$string['fullscreen'] = 'Pantalla-completa';
+$string['gadolinium'] = 'Gadolinio';
+$string['gallium'] = 'Galio';
+$string['geosurfaceasdots'] = 'Geosuperficie como puntos';
+$string['germanium'] = 'Germanio';
+$string['glutamic'] = 'Ácido glutámico';
+$string['glutamine'] = 'Glutamina';
+$string['glycine'] = 'Glicina';
+$string['gold'] = 'Oro';
+$string['group'] = 'Grupo';
+$string['group1'] = 'Grupo1, los metales álcalis';
+$string['group10'] = 'Grupo10, el grupo del níckel';
+$string['group11'] = 'Grupo11, el grupo del cobre, metales de monedas';
+$string['group12'] = 'Grupo12, el grupo del zinc';
+$string['group13'] = 'Grupo13, el grupo del boro';
+$string['group14'] = 'Grupo14, el grupo del carbono';
+$string['group15'] = 'Grupo15, los nitrogenoideos';
+$string['group16'] = 'Grupo16, los calcógenos, grupo del oxígeno';
+$string['group17'] = 'Grupo17, los halógenos';
+$string['group18'] = 'Grupo18, los gases nobles';
+$string['group2'] = 'Grupo2, los metales alcalinotérreos';
+$string['group3'] = 'Grupo3, grupo del escandio,incluyendo lantanoides y actínidos';
+$string['group4'] = 'Grupo4, el grupo del titanio';
+$string['group5'] = 'Grupo5, el grupo del vanadio';
+$string['group6'] = 'Grupo6, el grupo del cromo';
+$string['group7'] = 'Grupo7, el grupo del manganeso';
+$string['group8'] = 'Grupo8, el grupo del hierro';
+$string['group9'] = 'Grupo9, el grupo del cobalto';
+$string['guanine'] = 'Guanina';
+$string['hafnium'] = 'Hafnio';
+$string['hassium'] = 'Hassio';
+$string['hbonds'] = 'H&nbsp;ligaduras';
+$string['hbonds_desc'] = 'Ligaduras de hidrógeno';
+$string['helium'] = 'Helio';
+$string['help'] = 'Ayuda';
+$string['histidine'] = 'Histidina';
+$string['holmium'] = 'Holmio';
+$string['hydrogen'] = 'Hidrógeno';
+$string['indium'] = 'Indio';
+$string['inosine'] = 'Inosina';
+$string['iodine'] = 'Yodo';
+$string['iridium'] = 'Iridio';
+$string['iron'] = 'Hierro';
+$string['isoleucine'] = 'Isoleucina';
+$string['jmolfiletypes'] = 'tipos de archivo Jmol';
+$string['jmolfiletypes_desc'] = 'Descripción de tipos de archivo Jmol';
+$string['jsmol'] = 'JSmol';
+$string['jsmol_desc'] = 'JSmol';
+$string['krypton'] = 'Kriptón';
+$string['labels'] = 'Etiquetas';
+$string['lanthanoids'] = 'Lantánidos';
+$string['lanthanum'] = 'Lantano';
+$string['lawrencium'] = 'Laurencio';
+$string['lead'] = 'Plomo';
+$string['leucine'] = 'Leucina';
+$string['lightgreybackground'] = 'Fondo gris claro';
+$string['lithium'] = 'Litio';
+$string['loading'] = 'Cargando...';
+$string['lutetium'] = 'Lutecio';
+$string['lysine'] = 'Lisina';
+$string['magnesium'] = 'Magnesio';
+$string['manganese'] = 'Manganeso';
+$string['meitnerium'] = 'Meitnerio';
+$string['mendelevium'] = 'Mendelevio';
+$string['mercury'] = 'Mercurio';
+$string['methionine'] = 'Metionina';
+$string['molecular'] = 'Molecular';
+$string['molybdenum'] = 'Molibdeno';
+$string['neodymium'] = 'Neodimio';
+$string['neon'] = 'Neón';
+$string['neptunium'] = 'Neptunio';
+$string['nickel'] = 'Níckel';
+$string['niobium'] = 'Niobio';
+$string['nitrogen'] = 'Nitrógeno';
+$string['noantialiasing'] = 'No anti-alias';
+$string['nobelium'] = 'Nobelio';
+$string['nobinary'] = 'Su navegador no soporta el cargar archivos binarios via JavaScript. Por favor intente alguno de los siguientes:<ol><li>Seleccione Jmol que usa tecnología de visualización Java que soporta archivo binario</li><li>Use una versión reciente de navegador que soporte cargar archivo binario  via JavaScript</li></ol>';
+$string['nohtml5'] = 'JSmol requiere HTML5. Su navegador de Internet no soporta HTML5. Por favor intente usar uno de los siguientes:<ol><li>Seleccione Jmol que usa tecnología de visualización de Java</li><li>Use una versión reciente de un navegador que soporte HTML5</li></ol>';
+$string['nojavasupport'] = 'JSmol requiere HTML5. Su navegador de Internet no soporta HTML5. Por favor intente usar uno de los siguientes:<ol><li>Seleccionar una tecnología de visualización diferente, JSmol (HTML5) o GLmol (WebGL), del menú</li><li>Use un navegador diferente, que soporte Java (Firefox, Safari o Internet Explorer). Vea <a target="_blank" href="https://java.com">Obtener Java</a></li></ol>';
+$string['notranslucency'] = 'No-translúcido';
+$string['nowebgl'] = 'GLmol requiere WebGL. Su navegador y/o su plataforma actualmente no soporta WebGL. Por favor, intente alguno de los siguientes:<ol><li>Seleccione una diferente tecnología de visualización JSmol (HTML5) o Jmol (Java)desde el menú</li><li><a target="_blank" href="https://get.webgl.org">Obtenga WebGL</a></li></ol>';
+$string['off'] = 'Etiquetas sesactivadas';
+$string['off_desc'] = 'Etiquetas desactivadas';
+$string['osmium'] = 'Osmio';
+$string['other'] = 'Otro/a';
+$string['oxygen'] = 'Oxígeno';
+$string['palladium'] = 'Paladio';
+$string['pblock'] = 'bloque-p';
+$string['performance'] = 'Desempeño';
+$string['phenylalanine'] = 'fenilalanina';
+$string['phosphorus'] = 'Fósforo';
+$string['platinum'] = 'Platino';
+$string['pluginname'] = 'Jmol';
+$string['plutonium'] = 'Plutonio';
+$string['polonium'] = 'Polonio';
+$string['polyhedra'] = 'Polihedro';
+$string['potassium'] = 'Potasio';
+$string['praseodymium'] = 'Praseodimio';
+$string['primary'] = 'Primario';
+$string['primary_desc'] = 'Color de Estructura Primaria (secuencia de residuos)';
+$string['proline'] = 'Prolina';
+$string['promethium'] = 'Prometio';
+$string['protoactinium'] = 'Protactinio';
+$string['quaternary'] = 'Cuaternaria';
+$string['quaternary_desc'] = 'Color de Estructura Cuaternaria';
+$string['radium'] = 'Radio';
+$string['radon'] = 'Radón';
+$string['residues'] = 'Residuos';
+$string['residues_desc'] = 'Etiquetas de Residuos';
+$string['rhenium'] = 'Renio';
+$string['rhodium'] = 'Rodio';
+$string['ribbon'] = 'Listón';
+$string['roentgenium'] = 'Roentgenio';
+$string['rubidium'] = 'Rubidio';
+$string['ruthenium'] = 'Rutenio';
+$string['rutherfordium'] = 'Rutherfordio';
+$string['samarium'] = 'Samario';
+$string['sblock'] = 'bloque-s';
+$string['scandium'] = 'Escandio';
+$string['seaborgium'] = 'Seaborgio';
+$string['secondary'] = 'Secundaria';
+$string['secondary_desc'] = 'Color de Estructura Secundaria';
+$string['selenium'] = 'Selenio';
+$string['serine'] = 'Serina';
+$string['silicon'] = 'Silicio';
+$string['silver'] = 'Plata';
+$string['sodium'] = 'Sodio';
+$string['spacefill'] = 'LLenarespacio';
+$string['spacefill_desc'] = 'Radio de van der Waals';
+$string['spin'] = 'Giro';
+$string['ssbonds'] = 'SS&nbsp;ligaduras';
+$string['ssbonds_desc'] = 'Puentes  disulfuro';
+$string['stick'] = 'Palito';
+$string['sticks'] = 'PAlitos';
+$string['strontium'] = 'Estroncio';
+$string['style'] = 'Estilo';
+$string['sulphur'] = 'Azufre';
+$string['surface'] = 'Superficie';
+$string['surface_desc'] = 'Superficie de van der Waals';
+$string['surfacesdotted'] = 'Superficies punteadas';
+$string['tantalum'] = 'Tantalio';
+$string['taskcleanjmoltemp'] = 'Limpiar archivos temporales del filtro Jmol';
+$string['technetium'] = 'Tecnecio';
+$string['tellurium'] = 'Telurio';
+$string['terbium'] = 'Terbio';
+$string['termini'] = 'Terminal';
+$string['termini_desc'] = 'Etiquetas terminales';
+$string['tertiary'] = 'Terciaria';
+$string['tertiary_desc'] = 'Color de Estructura Terciaria';
+$string['thallium'] = 'Talio';
+$string['thorium'] = 'Torio';
+$string['threonine'] = 'Treonina';
+$string['thulium'] = 'Tulio';
+$string['thymine'] = 'Timina';
+$string['tin'] = 'Estaño';
+$string['titanium'] = 'Titalio';
+$string['togglefullscreen'] = 'Alternar pantalla-completa';
+$string['transitionelements'] = 'elementos de transición';
+$string['tryptophan'] = 'Triptofano';
+$string['tungsten'] = 'Tungsteno';
+$string['tyrosine'] = 'Tirosina';
+$string['unitcell'] = 'Célula&nbsp;unitaria';
+$string['unitcell_desc'] = 'Célula unitaria cristalográfica';
+$string['uracil'] = 'Uracilo';
+$string['uranium'] = 'Uranio';
+$string['use'] = 'Mostrar tecnología';
+$string['use_desc'] = 'Descripción de mostrar tecnología';
+$string['valine'] = 'Valina';
+$string['vanadium'] = 'Vanadio';
+$string['whitebackground'] = 'Fondo blanco';
+$string['wireframe'] = 'Armazón de alambre';
+$string['wireframeonly'] = 'Solamente armazón de alambre';
+$string['xenon'] = 'Xenón';
+$string['ytterbium'] = 'Iterbio';
+$string['yttrium'] = 'Itrio';
+$string['zinc'] = 'Zinc';
+$string['zirconium'] = 'Zirconio';

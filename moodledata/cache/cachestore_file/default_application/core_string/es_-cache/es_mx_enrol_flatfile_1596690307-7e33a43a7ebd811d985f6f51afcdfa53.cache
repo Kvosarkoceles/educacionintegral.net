@@ -1,0 +1,20 @@
+a:26:{s:8:"encoding";s:24:"Codificación de archivo";s:13:"expiredaction";s:36:"Acción de caducidad de inscripción";s:18:"expiredaction_help";s:214:"Seleccione la acción a tomar cuando caduca la inscripción del usuario. Por favor tenga en cuenta que algunos datos del usuario y configuraciones son purgados del curso durante la des-inscripción (baja) al curso.";s:14:"filelockedmail";s:315:"El archivo de texto empleado en inscripciones basadas en archivo ({$a}) no puede ser eliminado por el proceso de 'cron'. Esto generalmente significa que los permisos son erróneos. Por favor, corrija los permisos para que Moodle puede eliminar el archivo, de lo contrario, podría ser procesado en varias ocasiones.";s:21:"filelockedmailsubject";s:41:"Error importante: Archivo de inscripción";s:15:"flatfile:manage";s:47:"Gestionar manualmente inscripciones de usuarios";s:16:"flatfile:unenrol";s:58:"Des-inscribir (dar de baja) manualmente usuarios del curso";s:18:"flatfileenrolments";s:37:"Inscripciones por Archivo Plano (CSV)";s:12:"flatfilesync";s:32:"Sincronización por archivoplano";s:8:"location";s:22:"Ubicación del archivo";s:13:"location_desc";s:119:"Especificar la ruta completa al archivo de inscripción. El archivo es borrado automáticamente después de procesarlo.";s:11:"notifyadmin";s:26:"Notificar al administrador";s:14:"notifyenrolled";s:30:"Notificar a usuarios inscritos";s:14:"notifyenroller";s:49:"Notificar al usuario responsable de inscripciones";s:34:"messageprovider:flatfile_enrolment";s:41:"Mensaje de inscripción por archivo plano";s:7:"mapping";s:31:"Mapeo de roles en archivo plano";s:10:"pluginname";s:19:"Archivo plano (CSV)";s:15:"pluginname_desc";s:898:"Este método revisará repetidamente y procesará un archivo de texto especialmente-formateado en la ubicación que Usted especifique. Este archivo es un archivo separado por comas que se asume que tiene cuatro o seis campos por línea:
+
+ operation, role, user idnumber, course idnumber [, starttime [, endtime]]
+
+en donde:
+
+* operation = add | del
+* role = student | teacher | teacheredit
+* user idnumber = idnumber en la tabla de usuarios PERO NO ES id
+* course idnumber = idnumber en la tabla del curso PERO NO ES id
+* starttime = hora de inicio (en segundos desde epoch) - opcional
+* endtime = hora de término (en segundos desde epoch) - opcional
+
+Podría verse algo parecido a esto: <pre class="informationbox">
+ add, student, 5, CF101
+ add, teacher, 6, CF101
+ add, teacheredit, 7, CF101
+ del, student, 8, CF101
+ del, student, 17, CF101
+ add, student, 21, CF101, 1091115000, 1091215000 </pre>";s:31:"privacy:metadata:enrol_flatfile";s:148:"El plugin de Inscripciones por Archivo Plano (CSV) puede almacenar datos personales relacionados a inscripciones futuras en la tabla enrol_flatfile.";s:38:"privacy:metadata:enrol_flatfile:action";s:52:"La acción de inscripción esperada en la fecha dada";s:40:"privacy:metadata:enrol_flatfile:courseid";s:57:"La ID del curso con el cual se relaciona la inscripción.";s:38:"privacy:metadata:enrol_flatfile:roleid";s:39:"La ID del rol a ser asignado o revocado";s:41:"privacy:metadata:enrol_flatfile:timestart";s:42:"El momento cuando comienza la inscripción";s:39:"privacy:metadata:enrol_flatfile:timeend";s:41:"El momento cuando termina la inscripción";s:44:"privacy:metadata:enrol_flatfile:timemodified";s:47:"El momento cuando la inscripción es modificada";s:38:"privacy:metadata:enrol_flatfile:userid";s:55:"La ID del usuario al cual se relaciona el cambio de rol";}

@@ -1,0 +1,8 @@
+s:1613:"<p>Las herramientas externas le permiten a los usuarios de Moodle interactuar con recursos educativos alojados en sitios remotos. Empleando un protocolo especial para invocarla, la herramienta remota tendrá acceso a cierta información general sobre el usuario que la invoca. Por ejemplo, el nombre de la institución, ID del curso, ID del usuario, y otra información tal como el nombre del usuario y dirección de su correo electrónico.</p>
+
+<p>Las herramientas enlistadas en esta página se dividen en tres categorías:</p>
+
+<ul><li><p><strong>Activa</strong> - Estos proveedores de herramientas han sido aprobados y configurados por un administrador. Estas pueden emplearse desde cualquier curso en este sitio. Si una clave de consumidor y un secreto compartido se introducen, se establece una relación de confianza entre este sitio y la herramienta remota, proporcionando un canal de comunicación seguro.</p></li>
+<li><p><strong>Pendiente</strong> - Estos proveedores de herramientas llegaron mediante una importación de un paquete, pero no han sido configurados por un administrador. Los profesores aún pueden usar herramientas de estos proveedores si es que tienen una clave de consumidor y un secreto compartido, o si no se requiere de ninguna.</p></li>
+<li><p><strong>Rechazada</strong> - Estos proveedores de herramientas están señalados como aquellos que el administrador no tiene intención de hacer disponibles en el sitio. Los profesores aún pueden emplear herramientas de estos proveedores si tienen una clave de usuario y secreto compartido, o si no se requiere de ninguno.</p></li>
+</ul>";
