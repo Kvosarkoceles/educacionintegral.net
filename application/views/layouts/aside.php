@@ -16,9 +16,9 @@
 			<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="#">Inicio </a></li>
-						<li class="main_nav_item"><a href="#">Nosotros</a></li>
-						<li class="main_nav_item"><a href="courses.html">Cursos</a></li>
+						<li class="main_nav_item"><a href="/">Inicio </a></li>
+						<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
+						<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 						<li class="main_nav_item"><a href="elements.html">Elementos</a></li>
 						<li class="main_nav_item"><a href="news.html">Noticias</a></li>
 						<li class="main_nav_item"><a href="contact.html">Contacto</a></li>
@@ -50,9 +50,9 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-				<li class="main_nav_item"><a href="#">Inicio</a></li>
-						<li class="main_nav_item"><a href="#">Nosotros</a></li>
-						<li class="main_nav_item"><a href="courses.html">Cursos</a></li>
+				<li class="main_nav_item"><a href="/">Inicio</a></li>
+						<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
+						<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 						<li class="main_nav_item"><a href="elements.html">Elementos</a></li>
 						<li class="main_nav_item"><a href="news.html">Noticias</a></li>
 						<li class="main_nav_item"><a href="contact.html">Contacto</a></li>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/courses_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/courses_responsive.css">
 </head>
 <body>
 

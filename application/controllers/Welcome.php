@@ -26,4 +26,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('layouts/footer');
 		/* $this->load->view('welcome_message'); */
 	}
+
+	public function nosotros()
+	{
+		$this->load->view('layouts/header');
+		$this->load->view('layouts/aside');
+		$this->load->view('web/index');
+		$this->load->view('layouts/footer');
+		/* $this->load->view('welcome_message'); */
+	}
 }
