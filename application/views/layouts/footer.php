@@ -27,12 +27,12 @@
 						<div class="footer_column_title">Menu</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="#">Inicio</a></li>
-								<li class="footer_list_item"><a href="#">Nosotros</a></li>
-								<li class="footer_list_item"><a href="courses.html">Cursos</a></li>
-								<li class="footer_list_item"><a href="elements.html">Elementos</a></li>
-								<li class="footer_list_item"><a href="news.html">Noticias</a></li>
-								<li class="footer_list_item"><a href="contact.html">Contacto</a></li>
+								<li class="footer_list_item"><a href="/">Inicio</a></li>
+								<li class="footer_list_item"><a href="/nosotros">Nosotros</a></li>
+								<li class="footer_list_item"><a href="/cursos">Cursos</a></li>
+								<li class="footer_list_item"><a href="/profesores">Profesores</a></li>
+								<li class="footer_list_item"><a href="/">Noticias</a></li>
+								<li class="footer_list_item"><a href="/">Contacto</a></li>
 							</ul>
 						</div>
 					</div>
