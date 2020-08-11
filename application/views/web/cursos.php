@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<h1>Popular Courses</h1>
+						<h1>Cursos Populares</h1>
 					</div>
 				</div>
 			</div>
