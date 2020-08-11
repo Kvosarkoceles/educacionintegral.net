@@ -26,20 +26,20 @@ class Pagina extends CI_Controller {
 		$this->load->view('layouts/footer');
 	}
 
-	public function nosotros()
+	public function logo()
 	{
-		$this->load->view('layouts/header');
-		$this->load->view('layouts/aside');
-		$this->load->view('web/nosotros');
-		$this->load->view('layouts/footer');
+		$this->load->view('admin/layouts/header');
+		$this->load->view('admin/layouts/aside');
+		$this->load->view('admin/pagina/logo/list');
+		$this->load->view('admin/layouts/footer');
 	}
 
-	public function cursos()
+	public function banners()
 	{
-		$this->load->view('layouts/header');
-		$this->load->view('layouts/aside');
-		$this->load->view('web/cursos');
-		$this->load->view('layouts/footer');
+		$this->load->view('admin/layouts/header');
+		$this->load->view('admin/layouts/aside');
+		$this->load->view('admin/pagina/banners/list');
+		$this->load->view('admin/layouts/footer');
 	}
 
 	public function profesores()
