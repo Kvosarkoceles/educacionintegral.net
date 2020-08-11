@@ -17,7 +17,7 @@ class Usuarios extends CI_Controller {
 		);
 		$this->load->view("admin/layouts/header");
 		$this->load->view("admin/layouts/aside"); 
-		$this->load->view("admin/usuarios/list",$data);
+		$this->load->view("admin/usuarios/list2",$data);
 	 	$this->load->view("admin/layouts/footer"); 
 	}
 	public function add(){
