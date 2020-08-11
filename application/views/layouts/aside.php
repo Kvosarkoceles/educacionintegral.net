@@ -19,9 +19,9 @@
 						<li class="main_nav_item"><a href="/">Inicio </a></li>
 						<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
 						<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
-						<li class="main_nav_item"><a href="elements.html">Elementos</a></li>
-						<li class="main_nav_item"><a href="news.html">Noticias</a></li>
-						<li class="main_nav_item"><a href="contact.html">Contacto</a></li>
+						<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
+						<li class="main_nav_item"><a href="/">Noticias</a></li>
+						<li class="main_nav_item"><a href="/">Contacto</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -53,9 +53,9 @@
 				<li class="main_nav_item"><a href="/">Inicio</a></li>
 						<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
 						<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
-						<li class="main_nav_item"><a href="elements.html">Elementos</a></li>
-						<li class="main_nav_item"><a href="news.html">Noticias</a></li>
-						<li class="main_nav_item"><a href="contact.html">Contacto</a></li>
+						<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
+						<li class="main_nav_item"><a href="/">Noticias</a></li>
+						<li class="main_nav_item"><a href="/">Contacto</a></li>
 				</ul>
 
 				<!-- Menu Social -->

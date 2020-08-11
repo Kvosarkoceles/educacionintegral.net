@@ -12,7 +12,7 @@
 						<!-- Logo -->
 						<div class="logo_container">
 							<div class="logo">
-								<img src="<?php echo base_url();?>assets/images/logo.png" alt="">
+								<img src="<?php echo base_url();?>assets/images/logo4.png" alt="" width="51" height="100">
 								<span>Integra</span>
 							</div>
 						</div>
@@ -27,12 +27,12 @@
 						<div class="footer_column_title">Menu</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="#">Inicio</a></li>
-								<li class="footer_list_item"><a href="#">Nosotros</a></li>
-								<li class="footer_list_item"><a href="courses.html">Cursos</a></li>
-								<li class="footer_list_item"><a href="elements.html">Elementos</a></li>
-								<li class="footer_list_item"><a href="news.html">Noticias</a></li>
-								<li class="footer_list_item"><a href="contact.html">Contacto</a></li>
+								<li class="footer_list_item"><a href="/">Inicio</a></li>
+								<li class="footer_list_item"><a href="/nosotros">Nosotros</a></li>
+								<li class="footer_list_item"><a href="/cursos">Cursos</a></li>
+								<li class="footer_list_item"><a href="/profesores">Profesores</a></li>
+								<li class="footer_list_item"><a href="/">Noticias</a></li>
+								<li class="footer_list_item"><a href="/">Contacto</a></li>
 							</ul>
 						</div>
 					</div>

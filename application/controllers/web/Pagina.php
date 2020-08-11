@@ -41,4 +41,12 @@ class Pagina extends CI_Controller {
 		$this->load->view('web/cursos');
 		$this->load->view('layouts/footer');
 	}
+
+	public function profesores()
+	{
+		$this->load->view('layouts/header');
+		$this->load->view('layouts/aside');
+		$this->load->view('web/profesores');
+		$this->load->view('layouts/footer');
+	}
 }

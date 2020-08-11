@@ -16,7 +16,11 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
+<<<<<<< HEAD
 						<h1>Cursos populares</h1>
+=======
+						<h1>Cursos Populares</h1>
+>>>>>>> nosotros
 					</div>
 				</div>
 			</div>
@@ -33,7 +37,7 @@
 						</div>
 						<div class="price_box d-flex flex-row align-items-center">
 							<div class="course_author_image">
-								<img src="images/author.jpg" alt="https://unsplash.com/@mehdizadeh">
+								<img src="<?php echo base_url();?>assets/images/author.jpg" alt="https://unsplash.com/@mehdizadeh">
 							</div>
 							<div class="course_author_name">Michael Smith, <span>Autor</span></div>
 							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
