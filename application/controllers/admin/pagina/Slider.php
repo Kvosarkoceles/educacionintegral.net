@@ -9,13 +9,17 @@ class Slider extends CI_Controller
 		/* 	if (!$this->session->userdata("login")) {
 			redirect(base_url());
 		} */
-		$this->load->model("pagina/Pagina_model");
+		$this->load->model("pagina/Slider_model");
+		
 	}
 	public function index()
 	{
+		$data  = array(
+			'sliders' => $this->Slider_model->getSliders(),
+		);
 		$this->load->view('admin/layouts/header');
 		$this->load->view('admin/layouts/aside');
-		$this->load->view('admin/pagina/slider/list');
+		$this->load->view('admin/pagina/slider/list',$data);
 		$this->load->view('admin/layouts/footer');
 	}
 

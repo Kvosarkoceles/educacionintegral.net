@@ -138,19 +138,14 @@
 
               </ul>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fas fa-circle nav-icon"></i>
-                <p>Level 1</p>
-              </a>
-            </li>
+           
 
 
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-circle"></i>
                 <p>
-                  Inicio
+                  Nosotros
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
