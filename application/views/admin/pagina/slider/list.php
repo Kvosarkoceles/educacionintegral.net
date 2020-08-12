@@ -34,7 +34,7 @@
                           <td><?php echo $slider->observaciones; ?></td>
                           <td><?php echo $slider->imagen; ?></td>
                            <td>
-                           <a href="<?php echo base_url();?><?php echo base_url();?>" target="_blank">Ver</a>
+                           <a href="<?php echo base_url();?><?php echo $slider->imagen; ?>" target="_blank">Ver</a>
                            </td>
                           <td><a href="<?php echo base_url();?>admin/pagina/slider/edit/<?php echo $slider->id; ?>">editar</a></td>
                           <td>eliminar</td>
