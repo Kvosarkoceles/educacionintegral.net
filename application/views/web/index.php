@@ -11,7 +11,7 @@
 			<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/1_background.jpg)"></div>
 			<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 				<div class="hero_slide_content text-center">
-					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obten tu <span>Educación</span> hoy mismo!</h1>
+					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
 				</div>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 			<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/2_background.jpg)"></div>
 			<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 				<div class="hero_slide_content text-center">
-					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obten tu <span>Educación</span> hoy mismo!</h1>
+					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
 				</div>
 			</div>
 		</div>
@@ -31,7 +31,7 @@
 			<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/3_background.jpg)"></div>
 			<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 				<div class="hero_slide_content text-center">
-					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obten tu <span>Educación</span> hoy mismo!</h1>
+					<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
 				</div>
 			</div>
 		</div>
@@ -73,7 +73,7 @@
 					<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 						<img src="<?php echo base_url(); ?>assets/images/professor.svg" class="svg" alt="">
 						<div class="hero_box_content">
-							<h2 class="hero_box_title">NUestros profesores</h2>
+							<h2 class="hero_box_title">Nuestros profesores</h2>
 							<a href="teachers.html" class="hero_box_link">ver mas</a>
 						</div>
 					</div>
@@ -282,7 +282,7 @@
 
 						<div class="col-lg-6 order-lg-2 order-3">
 							<div class="event_content">
-								<div class="event_name"><a class="trans_200" href="#">Jornada de puertas abiertas en el campus de la Univesrsidad</a></div>
+								<div class="event_name"><a class="trans_200" href="#">Jornada de puertas abiertas en el campus de la Universidad</a></div>
 								<div class="event_location">Prque central</div>
 								<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
 							</div>
