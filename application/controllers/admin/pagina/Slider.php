@@ -31,11 +31,14 @@ class Slider extends CI_Controller
 		$this->load->view('admin/layouts/footer');
 	}
 
-	public function edit()
+	public function edit($id)
 	{
+		$data  = array(
+			'slider' => $this->Slider_model->getSlider($id)
+		);
 		$this->load->view('admin/layouts/header');
 		$this->load->view('admin/layouts/aside');
-		$this->load->view('admin/pagina/slider/edit');
+		$this->load->view('admin/pagina/slider/edit',$data);
 		$this->load->view('admin/layouts/footer');
 	}
 
