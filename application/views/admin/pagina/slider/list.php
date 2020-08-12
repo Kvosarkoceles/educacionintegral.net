@@ -17,8 +17,10 @@
                       <th>Descripción</th>
                       <th>Status</th>
                       <th>Observaciones</th>
-                      <th>Imagen</th>
-                      <th>Registro</th>
+                      <th>Imagen</th>                   
+                      <th>ver</th>
+                      <th>editar</th>
+                      <th>eliminar</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -31,7 +33,9 @@
                           <td><?php echo $slider->idStatus; ?></td>
                           <td><?php echo $slider->observaciones; ?></td>
                           <td><?php echo $slider->imagen; ?></td>
-                          <td><?php echo $slider->fechaRegistro; ?></td>
+                           <td>ver</td>
+                          <td>editar</td>
+                          <td>eliminar</td>
                         </tr>
                       <?php endforeach; ?>
                     <?php endif; ?>
@@ -43,8 +47,10 @@
                       <th>Descripción</th>
                       <th>Status</th>
                       <th>Observaciones</th>
-                      <th>Imagen</th>
-                      <th>Registro</th>
+                      <th>Imagen</th>                     
+                      <th>ver</th>
+                      <th>editar</th>
+                      <th>eliminar</th>
                     </tr>
                   </tfoot>
                 </table>
