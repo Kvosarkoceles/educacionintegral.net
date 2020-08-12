@@ -24,7 +24,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">Maria Smith</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñadora gráfica</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -47,7 +47,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">Christian Blue</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñador gráfico</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -70,7 +70,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">James Brown</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñador gráfico</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -93,7 +93,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">Julie Denver</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñadora gráfica</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -116,7 +116,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">Julie Denver</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñadora gráfica</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -139,7 +139,7 @@
 						</div>
 						<div class="card-body text-center">
 							<div class="card-title"><a href="#">Julie Denver</a></div>
-							<div class="card-text">Graphic Designer</div>
+							<div class="card-text">Diseñadora gráfica</div>
 							<div class="teacher_social">
 								<ul class="menu_social">
 									<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
