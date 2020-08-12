@@ -1,8 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pagina extends CI_Controller {
-
+class Pagina extends CI_Controller
+{
+	public function __construct()
+	{
+		parent::__construct();
+		/* 	if (!$this->session->userdata("login")) {
+			redirect(base_url());
+		} */
+		$this->load->model("pagina/Pagina_model");
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -28,6 +36,8 @@ class Pagina extends CI_Controller {
 
 	public function logo()
 	{
+		
+		
 		$this->load->view('admin/layouts/header');
 		$this->load->view('admin/layouts/aside');
 		$this->load->view('admin/pagina/logo/list');
