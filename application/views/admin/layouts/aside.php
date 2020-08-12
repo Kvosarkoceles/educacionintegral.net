@@ -75,6 +75,77 @@
 
 
             <li class="nav-header">PAGINA</li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  Inicio
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Logo
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/logo/add" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>add</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Slider
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/slider/" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Lista</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/slider/add" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Add</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/slider/edit" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Edit</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>Level 1</p>
+              </a>
+            </li>
+
+
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-circle"></i>

@@ -12,7 +12,7 @@
 						<!-- Logo -->
 						<div class="logo_container">
 							<div class="logo">
-								<img src="<?php echo base_url();?>assets/images/logo4.png" alt="" width="51" height="100">
+								<img src="<?php echo base_url();?>assets/images/logo.png" alt="" width="51" height="100">
 								<span>Integra</span>
 							</div>
 						</div>
