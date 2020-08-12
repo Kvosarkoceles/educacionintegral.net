@@ -55,4 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['nosotros'] = 'web/pagina/nosotros';
 $route['cursos'] = 'web/pagina/cursos';
 $route['profesores'] = 'web/pagina/profesores';
+$route['noticias'] = 'web/pagina/noticias';
 $route['admin'] = 'admin/administrador/index';

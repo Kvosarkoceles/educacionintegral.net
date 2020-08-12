@@ -18,7 +18,7 @@
 					<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
 					<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 					<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
-					<li class="main_nav_item"><a href="/">Noticias</a></li>
+					<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
 					<li class="main_nav_item"><a href="/">Contacto</a></li>
 				</ul>
 			</div>
@@ -52,7 +52,7 @@
 				<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
 				<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 				<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
-				<li class="main_nav_item"><a href="/">Noticias</a></li>
+				<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
 				<li class="main_nav_item"><a href="/">Contacto</a></li>
 			</ul>
 
