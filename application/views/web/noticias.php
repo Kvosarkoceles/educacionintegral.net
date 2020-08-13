@@ -2,7 +2,7 @@
 
 	<div class="home">
 		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+			<div class="home_background prlx" style="background-image:url(<?php echo base_url(); ?>assets/images/news_background.jpg)"></div>
 		</div>
 		<div class="home_content">
 			<h1>The News</h1>
@@ -23,7 +23,7 @@
 						<!-- News Post -->
 						<div class="news_post">
 							<div class="news_post_image">
-								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+								<img src="<?php echo base_url(); ?>assets/images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
 								<div class="news_post_date_container">
@@ -54,7 +54,7 @@
 						<!-- News Post -->
 						<div class="news_post">
 							<div class="news_post_image">
-								<img src="images/news_2.jpg" alt="https://unsplash.com/@dsmacinnes">
+								<img src="<?php echo base_url(); ?>assets/images/news_2.jpg" alt="https://unsplash.com/@dsmacinnes">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
 								<div class="news_post_date_container">
@@ -85,7 +85,7 @@
 						<!-- News Post -->
 						<div class="news_post">
 							<div class="news_post_image">
-								<img src="images/news_3.jpg" alt="https://unsplash.com/@dsmacinnes">
+								<img src="<?php echo base_url(); ?>assets/images/news_3.jpg" alt="https://unsplash.com/@dsmacinnes">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
 								<div class="news_post_date_container">
@@ -157,7 +157,7 @@
 								<!-- Latest Post -->
 								<div class="latest_post">
 									<div class="latest_post_image">
-										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+										<img src="<?php echo base_url(); ?>assets/images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
 									</div>
 									<div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
 									<div class="latest_post_meta">
@@ -170,7 +170,7 @@
 								<!-- Latest Post -->
 								<div class="latest_post">
 									<div class="latest_post_image">
-										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+										<img src="<?php echo base_url(); ?>assets/images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
 									</div>
 									<div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
 									<div class="latest_post_meta">
@@ -183,7 +183,7 @@
 								<!-- Latest Post -->
 								<div class="latest_post">
 									<div class="latest_post_image">
-										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+										<img src="<?php echo base_url(); ?>assets/images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
 									</div>
 									<div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
 									<div class="latest_post_meta">

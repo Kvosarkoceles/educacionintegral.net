@@ -14,9 +14,9 @@
                     <tr>
                       <th>#</th>
                       <th>Nombres</th>
-                      <th>Descripción</th>
+                      <th>Slogan</th>
                       <th>Status</th>
-                      <th>Observaciones</th>
+                      <th>Descripcion</th>
                       <th>Imagen</th>                   
                       <th>ver</th>
                       <th>editar</th>
@@ -29,9 +29,9 @@
                         <tr>
                           <td><?php echo $slider->id; ?></td>
                           <td><?php echo $slider->nombre; ?></td>
-                          <td><?php echo $slider->descripcion; ?></td>
+                          <td><?php echo $slider->slogan; ?></td>
                           <td><?php echo $slider->idStatus; ?></td>
-                          <td><?php echo $slider->observaciones; ?></td>
+                          <td><?php echo $slider->descripcion; ?></td>
                           <td><?php echo $slider->imagen; ?></td>
                            <td>
                            <a href="<?php echo base_url();?><?php echo $slider->imagen; ?>" target="_blank">Ver</a>
@@ -46,9 +46,9 @@
                     <tr>
                       <th>#</th>
                       <th>Nombres</th>
-                      <th>Descripción</th>
+                      <th>Slogan</th>
                       <th>Status</th>
-                      <th>Observaciones</th>
+                      <th>Descripcion</th>
                       <th>Imagen</th>                     
                       <th>ver</th>
                       <th>editar</th>
