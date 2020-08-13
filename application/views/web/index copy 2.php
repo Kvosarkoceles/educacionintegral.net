@@ -5,24 +5,48 @@
 	<!-- Hero Slider -->
 	<div class="hero_slider_container">
 		<div class="hero_slider owl-carousel">
+
+
 			<?php if (!empty($sliders)) : ?>
 				<?php foreach ($sliders as $slider) : ?>
-					<!-- Hero Slide -->
-					<div class="hero_slide">
-						<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?><?php echo $slider->imagen; ?>)"></div>
-						<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-							<div class="hero_slide_content text-center">
-								<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><?php echo $slider->slogan; ?> </h1>
-							</div>
-						</div>
-					</div>
+hola mundo
 				<?php endforeach; ?>
 			<?php endif; ?>
 
 
 
+			<!-- Hero Slide -->
+			<div class="hero_slide">
+				<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/1_background.jpg)"></div>
+				<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+					<div class="hero_slide_content text-center">
+						<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hero Slide -->
+			<div class="hero_slide">
+				<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/2_background.jpg)"></div>
+				<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+					<div class="hero_slide_content text-center">
+						<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hero Slide -->
+			<div class="hero_slide">
+				<div class="hero_slide_background" style="background-image:url(<?php echo base_url(); ?>assets/images/3_background.jpg)"></div>
+				<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+					<div class="hero_slide_content text-center">
+						<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Obtén tu <span>Educación</span> hoy mismo!</h1>
+					</div>
+				</div>
+			</div>
 
 		</div>
+
 		<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">anterior</span></div>
 		<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">siguiente</span></div>
 	</div>
@@ -158,7 +182,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/earth-globe.svg" alt="">
+						<img src="images/earth-globe.svg" alt="">
 					</div>
 					<h3>Cursos en línea</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
@@ -166,7 +190,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/exam.svg" alt="">
+						<img src="images/exam.svg" alt="">
 					</div>
 					<h3>Cursos internos</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
@@ -174,7 +198,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/books.svg" alt="">
+						<img src="images/books.svg" alt="">
 					</div>
 					<h3>Biblioteca asombrosa</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
@@ -182,7 +206,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/professor.svg" alt="">
+						<img src="images/professor.svg" alt="">
 					</div>
 					<h3>Profesores excepcionales</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
@@ -190,7 +214,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/blackboard.svg" alt="">
+						<img src="images/blackboard.svg" alt="">
 					</div>
 					<h3>Programas principales</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
@@ -198,7 +222,7 @@
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/mortarboard.svg" alt="">
+						<img src="images/mortarboard.svg" alt="">
 					</div>
 					<h3>Diploma de graduación</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>

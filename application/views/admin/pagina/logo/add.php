@@ -4,12 +4,12 @@
     <div class="card">
 
       <div class="card-body">
-        <h3 class="header-title">Cambiar Logo</h3>
+        <h3 class="header-title">Cambiar Logo (51px * 43px, solo archivos png)</h3>
         <div class="form-row align-items-center">
           <div class="col-sm-6  my-1 ">
             <div class="form-group">
               <label for="imagen">Imagen:</label>
-              <input type="file" name=mi_archivo id=mi_archivo class="form-control" accept=".gif, .jpg, .jpeg, .png" >
+              <input type="file" name=mi_archivo id=mi_archivo class="form-control" accept=".png" >
             </div>
             <div class="col-lg-12 col-md-6 col-sm-6">
               <div class="form-group" align="center" >
