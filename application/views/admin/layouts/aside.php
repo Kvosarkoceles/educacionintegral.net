@@ -172,7 +172,7 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/pagina/logo/add" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/cursos/cursos/portada" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>add</p>
                       </a>
@@ -189,13 +189,13 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/pagina/slider/" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/cursos/cursos/" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>Lista</p>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/pagina/slider/add" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/cursos/cursos/add" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>Add</p>
                       </a>
