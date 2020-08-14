@@ -188,6 +188,6 @@ class Profesores extends CI_Controller
 			return;
 		}
 		$data['uploadSuccess'] = $this->upload->data();
-		redirect(base_url()."admin/pagina/logo/add");
+		redirect(base_url()."admin/profesores/profesores/portada");
     }
 }

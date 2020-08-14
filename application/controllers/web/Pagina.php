@@ -7,10 +7,11 @@ class Pagina extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		/* 	if (!$this->session->userdata("login")) {
+		if (!$this->session->userdata("login")) {
 			redirect(base_url());
-		} */
+		} 
 		$this->load->model("pagina/Slider_model");
+		$this->load->model("pagina/Profesores_model");
 	}
 	public function index()
 	{
@@ -41,9 +42,12 @@ class Pagina extends CI_Controller
 
 	public function profesores()
 	{
+		$data  = array(
+			'profesores' => $this->Profesores_model->getList()
+		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
-		$this->load->view('web/profesores');
+		$this->load->view('web/profesores',$data);
 		$this->load->view('layouts/footer');
 	}
 	public function noticias()
