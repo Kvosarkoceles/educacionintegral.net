@@ -6,30 +6,43 @@
         <!-- general form elements disabled -->
         <div class="card card-warning">
           <div class="card-header">
-            <h3 class="card-title">Agrega Slider</h3>
+            <h3 class="card-title">Agrega Profesor</h3>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <form action="<?php echo base_url(); ?>admin/pagina/slider/store" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url(); ?>admin/profesores/profesores/store" method="POST" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-12 my-1">
                   <div class="form-group" align="center">
-                    <img id="imgSalida" width="100%" height="100%">
+                    <img id="imgSalida" width="50%" height="50%">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                   <!-- text input -->
                   <div class="form-group">
                     <label>Nombre</label>
                     <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
+                  <!-- text input -->
                   <div class="form-group">
-                    <label>Slogan</label>
-                    <input type="text" class="form-control" placeholder="Slogan" id="slogan" name="slogan">
+                    <label>Segundo Nombre</label>
+                    <input type="text" class="form-control" placeholder="Segundo Nombre" id="segundoNombre" name="segundoNombre">
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <label>Primer Apellido</label>
+                    <input type="text" class="form-control" placeholder="Primer Apellido" id="primerApellido" name="primerApellido">
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <label>Segundo Apellido</label>
+                    <input type="text" class="form-control" placeholder="Segundo Apellido" id="segundoApellido" name="segundoApellido">
                   </div>
                 </div>
               </div>
@@ -37,8 +50,8 @@
                 <div class="col-sm-6">
                   <!-- textarea -->
                   <div class="form-group">
-                    <label>Descripción(interno)</label>
-                    <textarea class="form-control" rows="3" placeholder="Descripcion (interno)" id="descripcion" name="descripcion"></textarea>
+                    <label>Carrera</label>
+                    <input type="text" class="form-control" placeholder="Carrera" id="carrera" name="carrera">
                   </div>
                 </div>
                 <div class="col-sm-6">

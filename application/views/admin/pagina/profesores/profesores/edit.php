@@ -69,7 +69,7 @@
                                 <div class="col-sm-6">
                                     <!-- select -->
                                     <div class="form-group">
-                                        <a href="#"> Cambiar la imagen</a>
+                                        <a href="<?php echo base_url(); ?>admin/profesores/profesores/cabiarfoto/<?php echo $profesor->id; ?>"> Cambiar la imagen</a>
 
                                     </div>
                                 </div>

@@ -26,7 +26,7 @@ class Profesores extends CI_Controller
     {
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/slider/add');
+        $this->load->view('admin/pagina/profesores/profesores/add');
         $this->load->view('admin/layouts/footer');
     }
 
@@ -44,15 +44,16 @@ class Profesores extends CI_Controller
     public function store()
     {
         $nombre = $this->input->post("nombre");
-        $slogan = $this->input->post("slogan");
+        $segundoNombre = $this->input->post("segundoNombre");
+        $primerApellido = $this->input->post("primerApellido");
+        $segundoApellido = $this->input->post("segundoApellido");
+        $carrera = $this->input->post("carrera");
         $status = $this->input->post("status");
-        $descripcion = $this->input->post("descripcion");
-
 
         $mi_archivo = 'mi_archivo';
-        $config['upload_path'] = 'assets/images/sliders';
+        $config['upload_path'] = 'assets/images/profesores';
         $config['allowed_types'] = 'gif|jpg|png';
-        $config['file_name'] = $nombre;
+        $config['file_name'] = $nombre.$primerApellido;
         $config['max_size'] = "50000"; //tamaño en kilobytes
         $config['max_width'] = "2000";
         $config['max_height'] = "2000";
@@ -67,18 +68,20 @@ class Profesores extends CI_Controller
             $archivo = $file_info['file_name'];
             $data  = array(
                 'nombre' => $nombre,
-                'slogan' => $slogan,
-                'idStatus' => $status,
-                'descripcion' => $descripcion,
-                'imagen' => "assets/images/sliders/" . $archivo,
+                'segundoNombre' => $segundoNombre,
+                'primerApellido' => $primerApellido,
+                'segundoApellido' => $segundoApellido,
+                'carrera' => $carrera,
+                'imagen' => "assets/images/profesores/" . $archivo,
                 'fechaRegistro' => date("Y") . "-" . date("m") . "-" . date("d"),
-                'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
+                'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d"),
+                'idStatus' => $status
             );
-            if ($this->Slider_model->save($data)) {
-                redirect(base_url() . "admin/pagina/slider");
+            if ($this->Profesores_model->save($data)) {
+                redirect(base_url() . "admin/profesores/profesores");
             } else {
                 $this->session->set_flashdata("error", "No se pudo guardar la informacion");
-                redirect(base_url() . "admin/pagina/slider/add");
+                redirect(base_url() . "admin/profesores/profesores/add");
             }
         }
         //	$file_info = $this->upload->data();
@@ -90,14 +93,19 @@ class Profesores extends CI_Controller
     }
 
 
-    public function imagenStore($id)
+    public function imagenupdate()
     {
-        unlink('assets/images/logo.png');
+
+        $imagenold = $this->input->post("imagenold");
+        $nombre = $this->input->post("nombre");
+        $primerApellido = $this->input->post("primerApellido");
+        $id = $this->input->post("id");
+        unlink($imagenold);
         $mi_imagen = 'mi_archivo';
-        $config['upload_path'] = "assets/images";
+        $config['upload_path'] = "assets/images/profesores";
         $config['overwrite'] = "TRUE";
-        $config['file_name'] = "logo";
-        $config['allowed_types'] = "png";
+        $config['file_name'] = $nombre.$primerApellido;
+        $config['allowed_types'] = "gif|jpg|jpeg|png";
         $config['max_size'] = "50000";
         $config['max_width'] = "2000";
         $config['max_height'] = "2000";
@@ -107,8 +115,21 @@ class Profesores extends CI_Controller
             $data['uploadError'] = $this->upload->display_errors();
             echo $this->upload->display_errors();
             return;
+        } else {
+            $data['uploadSuccess'] = $this->upload->data();
+            $file_info = $this->upload->data();
+            $archivo = $file_info['file_name'];
+            $data  = array(
+                'imagen' => "assets/images/profesores/" . $archivo,
+                'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
+            );
+            if ($this->Profesores_model->update($id, $data)) {
+                redirect(base_url() . "admin/profesores/profesores");
+            } else {
+                $this->session->set_flashdata("error", "No se pudo guardar la informacion");
+                redirect(base_url() . "admin/profesores/profesores/add");
+            }
         }
-        $data['uploadSuccess'] = $this->upload->data();
     }
 
     public function update($id)
@@ -119,14 +140,14 @@ class Profesores extends CI_Controller
         $segundoApellido = $this->input->post("segundoApellido");
         $carrera = $this->input->post("carrera");
         $status = $this->input->post("status");
-      
+
         $data = array(
-            'nombre' => $nombre, 
+            'nombre' => $nombre,
             'segundoNombre' => $segundoNombre,
-            'primerApellido' => $primerApellido,  
-            'segundoApellido' => $segundoApellido,      
-            'carrera' => $carrera,      
-            'idStatus' => $status,       
+            'primerApellido' => $primerApellido,
+            'segundoApellido' => $segundoApellido,
+            'carrera' => $carrera,
+            'idStatus' => $status,
             'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
         );
         if ($this->Profesores_model->update($id, $data)) {
@@ -135,5 +156,16 @@ class Profesores extends CI_Controller
             $this->session->set_flashdata("error", "No se pudo guardar la informacion");
             redirect(base_url() . "admin/profesores/profesores/edit/" . $id);
         }
+    }
+
+    public function cabiarfoto($id)
+    {
+        $data  = array(
+            'profesor' => $this->Profesores_model->getProfesor($id)
+        );
+        $this->load->view('admin/layouts/header');
+        $this->load->view('admin/layouts/aside');
+        $this->load->view('admin/pagina/profesores/profesores/editfoto', $data);
+        $this->load->view('admin/layouts/footer');
     }
 }

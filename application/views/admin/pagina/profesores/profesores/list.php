@@ -28,7 +28,15 @@
                           <td><?php echo $profesor->id; ?></td>
                           <td><?php echo $profesor->nombre; ?> <?php echo $profesor->segundoNombre; ?> <?php echo $profesor->primerApellido; ?> <?php echo $profesor->segundoApellido; ?></td>
                           <td><?php echo $profesor->carrera; ?></td>
-                          <td><?php echo $profesor->idStatus; ?></td>
+                          <td>
+                            <?php if ($profesor->idStatus == 2) : ?>
+                              Desactivado
+                            <?php elseif ($profesor->idStatus == 1) : ?>
+                              Activado
+                            <?php else : ?>
+                              unknown
+                            <?php endif; ?>
+                          </td>
                           <td>
                             <a href="<?php echo base_url(); ?><?php echo $profesor->idStatus; ?>" target="_blank">Ver</a>
                           </td>

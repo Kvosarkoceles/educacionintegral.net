@@ -144,7 +144,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/pagina/slider/add" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/profesores/profesores/add" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>Add</p>
                       </a>
