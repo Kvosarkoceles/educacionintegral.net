@@ -15,7 +15,7 @@ class Pagina extends CI_Controller
 	public function index()
 	{
 		$data  = array(
-			'sliders' => $this->Slider_model->getSliders()
+			'sliders' => $this->Slider_model->getList()
 		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');

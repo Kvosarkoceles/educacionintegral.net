@@ -6,9 +6,9 @@ class Slider extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		/* 	if (!$this->session->userdata("login")) {
+		if (!$this->session->userdata("login")) {
 			redirect(base_url());
-		} */
+		}
 		$this->load->model("pagina/Slider_model");
 	}
 	public function index()
@@ -33,7 +33,8 @@ class Slider extends CI_Controller
 	public function edit($id)
 	{
 		$data  = array(
-			'slider' => $this->Slider_model->getSlider($id)
+			'slider' => $this->Slider_model->getSlider($id),
+			'menu_status' => $this->Slider_model->getMenuStatus()
 		);
 		$this->load->view('admin/layouts/header');
 		$this->load->view('admin/layouts/aside');
@@ -57,11 +58,10 @@ class Slider extends CI_Controller
 		$config['max_height'] = "2000";
 		$this->load->library('upload', $config);
 		if (!$this->upload->do_upload($mi_archivo)) {
-			redirect(base_url()."admin/pagina/slider/add");
+			redirect(base_url() . "admin/pagina/slider/add");
 			echo '<script type="text/javascript">
 								alert("Agrege un Avatar");
 							</script>';
-			
 		} else {
 			$file_info = $this->upload->data();
 			$archivo = $file_info['file_name'];
@@ -71,7 +71,8 @@ class Slider extends CI_Controller
 				'idStatus' => $status,
 				'descripcion' => $descripcion,
 				'imagen' => "assets/images/sliders/" . $archivo,
-				'fechaRegistro' => "1"
+				'fechaRegistro' => date("Y") . "-" . date("m") . "-" . date("d"),
+				'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
 			);
 			if ($this->Slider_model->save($data)) {
 				redirect(base_url() . "admin/pagina/slider");
@@ -108,5 +109,26 @@ class Slider extends CI_Controller
 			return;
 		}
 		$data['uploadSuccess'] = $this->upload->data();
+	}
+
+	public function update($id)
+	{
+		$nombre = $this->input->post("nombre");
+		$slogan = $this->input->post("slogan");
+		$status = $this->input->post("status");
+		$descripcion = $this->input->post("descripcion");
+		$data = array(
+			'nombre' => $nombre,
+			'slogan' => $slogan,
+			'idStatus' => $status,
+			'descripcion' => $descripcion,			
+			'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")			
+		);
+		if ($this->Slider_model->update($id, $data)) {
+			redirect(base_url() . "admin/pagina/slider/");
+		} else {
+			$this->session->set_flashdata("error", "No se pudo guardar la informacion");
+			redirect(base_url() . "admin/pagina/slider/edit/" . $id);
+		}
 	}
 }
