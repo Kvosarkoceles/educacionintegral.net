@@ -8,9 +8,9 @@
 
             <div class="col-lg-12 col-md-6 col-sm-6">
               <div class="form-group" align="center">
-              <input type="text" class="form-control" value="<?php echo $curso->imagen; ?>" id="imagenold" name="imagenold">
-              <input type="text" class="form-control" value="<?php echo $curso->id; ?>" id="id" name="id">
-              <input type="text" class="form-control" value="<?php echo $curso->nombre; ?>" id="nombre" name="nombre">
+              <input type="hidden" class="form-control" value="<?php echo $curso->imagen; ?>" id="imagenold" name="imagenold">
+              <input type="hidden" class="form-control" value="<?php echo $curso->id; ?>" id="id" name="id">
+              <input type="hidden" class="form-control" value="<?php echo $curso->nombre; ?>" id="nombre" name="nombre">
              
                 <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $curso->imagen; ?>" />
               </div>

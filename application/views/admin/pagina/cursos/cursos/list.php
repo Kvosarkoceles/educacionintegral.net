@@ -14,7 +14,9 @@
                     <tr>
                       <th>#</th>
                       <th>Nombres</th>
-                      <th>Descripción</th>
+                      <th>Subtitulo</th>
+                      <th>Profesor</th>
+                      <th>Popular</th>
                       <th>Status</th>
                       <th>ver</th>
                       <th>editar</th>
@@ -27,7 +29,17 @@
                         <tr>
                           <td><?php echo $curso->id; ?></td>
                           <td><?php echo $curso->nombre; ?></td>
-                          <td><?php echo $curso->descripcion; ?></td>
+                          <td><?php echo $curso->subtitulo; ?></td>
+                          <td><?php echo $curso->profesor; ?></td>
+                          <td>
+                            <?php if ($curso->popular == 2) : ?>
+                              Desactivado
+                            <?php elseif ($curso->popular == 1) : ?>
+                              Activado
+                            <?php else : ?>
+                              unknown
+                            <?php endif; ?>
+                          </td>
                           <td>
                             <?php if ($curso->idStatus == 2) : ?>
                               Desactivado
@@ -50,7 +62,9 @@
                     <tr>
                       <th>#</th>
                       <th>Nombres</th>
-                      <th>Descripción</th>
+                      <th>Subtitulo</th>
+                      <th>Profesor</th>
+                      <th>Popular</th>
                       <th>Status</th>
                       <th>ver</th>
                       <th>editar</th>

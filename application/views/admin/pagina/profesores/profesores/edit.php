@@ -11,34 +11,38 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                         <form action="<?php echo base_url(); ?>admin/profesores/profesores/update/<?php echo $profesor->id; ?>" method="POST" enctype="multipart/form-data">
-                        <div class="row">
+                            <!-- Foto del profesor -->
+                            <div class="row">
                                 <div class="col-sm-12 my-1">
                                     <div class="form-group" align="center">
                                         <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $profesor->imagen; ?>" width="30%" height="30%">
                                     </div>
                                 </div>
                             </div>
+                            <!-- nombre del profesor -->
                             <div class="row">
+                                <!-- Nombre -->
                                 <div class="col-sm-3">
-                                    <!-- text input -->
                                     <div class="form-group">
                                         <label>Nombre</label>
                                         <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $profesor->nombre; ?>" id="nombre" name="nombre">
                                     </div>
                                 </div>
+                                <!-- Segundo nombret -->
                                 <div class="col-sm-3">
-                                    <!-- text input -->
                                     <div class="form-group">
                                         <label>Segundo Nombre</label>
                                         <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $profesor->segundoNombre; ?>" id="segundoNombre" name="segundoNombre">
                                     </div>
                                 </div>
+                                <!-- Primer apellido -->
                                 <div class="col-sm-3">
                                     <div class="form-group">
                                         <label>Primer Apellido</label>
                                         <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $profesor->primerApellido; ?>" id="primerApellido" name="primerApellido">
                                     </div>
                                 </div>
+                                <!-- Segundo apellido -->
                                 <div class="col-sm-3">
                                     <div class="form-group">
                                         <label>Segundo Apellido</label>
@@ -46,14 +50,16 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Segunda fila -->
                             <div class="row">
+                                <!-- Carrera -->
                                 <div class="col-sm-6">
-                                    <!-- textarea -->
                                     <div class="form-group">
                                         <label>Carrera</label>
                                         <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $profesor->carrera; ?>" id="carrera" name="carrera">
                                     </div>
                                 </div>
+                                <!-- Status -->
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Status</label>
@@ -65,21 +71,28 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Tercera fila curriculum-->
                             <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="descripcion_pagina">Curiculum</label>
+                                    <textarea name="curriculum" id="curriculum" rows="8" cols="80" class="summernote"><?php echo $profesor->curriculum; ?></textarea>
+                                </div>
+                            </div>
+                            <!-- Cuarta fila -->
+                            <div class="row">
+                                <!-- Cambiar imagen -->
                                 <div class="col-sm-6">
-                                    <!-- select -->
                                     <div class="form-group">
                                         <a href="<?php echo base_url(); ?>admin/profesores/profesores/cabiarfoto/<?php echo $profesor->id; ?>"> Cambiar la imagen</a>
-
                                     </div>
                                 </div>
+                                <!-- Boton guardar -->
                                 <div class="col-sm-6  my-1 ">
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-outline-secondary mb-3">Guardar</button>
                                     </div>
                                 </div>
                             </div>
-
 
                         </form>
                     </div>

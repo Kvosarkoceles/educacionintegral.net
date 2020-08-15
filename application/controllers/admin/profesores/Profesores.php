@@ -46,6 +46,7 @@ class Profesores extends CI_Controller
         $primerApellido = $this->input->post("primerApellido");
         $segundoApellido = $this->input->post("segundoApellido");
         $carrera = $this->input->post("carrera");
+        $curriculum = $this->input->post("curriculum");
         $status = $this->input->post("status");
 
         $mi_archivo = 'mi_archivo';
@@ -70,6 +71,7 @@ class Profesores extends CI_Controller
                 'primerApellido' => $primerApellido,
                 'segundoApellido' => $segundoApellido,
                 'carrera' => $carrera,
+                'curriculum' => $curriculum,
                 'imagen' => "assets/images/profesores/" . $archivo,
                 'fechaRegistro' => date("Y") . "-" . date("m") . "-" . date("d"),
                 'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d"),
@@ -133,6 +135,7 @@ class Profesores extends CI_Controller
         $primerApellido = $this->input->post("primerApellido");
         $segundoApellido = $this->input->post("segundoApellido");
         $carrera = $this->input->post("carrera");
+        $curriculum = $this->input->post("curriculum");
         $status = $this->input->post("status");
 
         $data = array(
@@ -141,6 +144,7 @@ class Profesores extends CI_Controller
             'primerApellido' => $primerApellido,
             'segundoApellido' => $segundoApellido,
             'carrera' => $carrera,
+            'curriculum' => $curriculum,
             'idStatus' => $status,
             'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
         );

@@ -26,7 +26,7 @@
 	</div>
 	<div class="header_side d-flex flex-row justify-content-center align-items-center">
 		<img src="<?php echo base_url(); ?>assets/images/phone-call.svg" alt="">
-		<span>+43 4566 7788 2457</span>
+		<span>55 49 37 45 66</span>
 	</div>
 
 	<!-- Hamburger -->

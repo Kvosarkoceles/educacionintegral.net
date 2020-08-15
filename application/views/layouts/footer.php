@@ -43,9 +43,9 @@
 						<div class="footer_column_title">Enlaces útiles</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="#">Testimonios</a></li>
+								<li class="footer_list_item"><a href="http://classroom.educacionintegral.net/">Aula Digital</a></li>
 								<li class="footer_list_item"><a href="#">FAQ</a></li>
-								<li class="footer_list_item"><a href="#">Comunidad</a></li>
+								<li class="footer_list_item"><a href="http://redsocial.educacionintegral.net/">Comunidad</a></li>
 								<li class="footer_list_item"><a href="#">Imagenes</a></li>
 								<li class="footer_list_item"><a href="#">Matrículas</a></li>
 							</ul>
@@ -58,17 +58,12 @@
 						<div class="footer_column_title">Contacto</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="<?php echo base_url();?>assets/images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									Blvd Libertad, 34 m05200 Arévalo
-								</li>
+								
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
 										<img src="<?php echo base_url();?>assets/images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
-									0034 37483 2445 322
+									5549374566
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">

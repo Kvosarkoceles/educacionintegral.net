@@ -11,26 +11,18 @@ class Welcome extends CI_Controller
 	/* 	if (!$this->session->userdata("login")) {
 			redirect(base_url());
 		} */
-		$this->load->model("pagina/Slider_model");
+		$this->load->model("pagina/Pagina_model");
 	}
 
 	public function index()
 	{
 		$data  = array(
-			'sliders' => $this->Slider_model->getList()
+			'sliders' => $this->Pagina_model->getSliders(),
+			'populares' => $this->Pagina_model->getCursosPopulares()
 		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
 		$this->load->view('web/index', $data);
 		$this->load->view('layouts/footer');
-	}
-
-	public function nosotros()
-	{
-		$this->load->view('layouts/header');
-		$this->load->view('layouts/aside');
-		$this->load->view('web/index');
-		$this->load->view('layouts/footer');
-		/* $this->load->view('welcome_message'); */
 	}
 }

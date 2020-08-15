@@ -18,21 +18,21 @@
 
 				<?php if (!empty($cursos)) : ?>
 					<?php foreach ($cursos as $curso) : ?>
-						
+
 						<!-- Popular Course Item -->
 						<div class="col-lg-4 course_box">
 							<div class="card">
 								<img class="card-img-top" src="<?php echo base_url(); ?><?php echo $curso->imagen; ?>" alt="https://unsplash.com/@kellybrito">
 								<div class="card-body text-center">
-									<div class="card-title"><a href="courses.html"><?php echo $curso->nombre; ?></a></div>
-									<div class="card-text"><?php echo $curso->descripcion; ?></div>
+									<div class="card-title"><a href="<?php echo base_url(); ?>curso/<?php echo $curso->id; ?>"><?php echo $curso->nombre; ?></a></div>
+									<div class="card-text"><?php echo $curso->subtitulo; ?></div>
 								</div>
 								<div class="price_box d-flex flex-row align-items-center">
 									<div class="course_author_image">
-										<img src="<?php echo base_url(); ?>assets/images/author.jpg" alt="https://unsplash.com/@mehdizadeh">
+										<img src="<?php echo base_url(); ?><?php echo $curso->profesorImagen; ?>" alt="profesor" width="46" height="46">
 									</div>
-									<div class="course_author_name">Michael Smith, <span>Autor</span></div>
-									<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
+									<div class="course_author_name"><?php echo $curso->profesor; ?> <?php echo $curso->profesorApellido; ?>, <span><?php echo $curso->profesorCarrera; ?></span></div>
+
 								</div>
 							</div>
 						</div>
@@ -40,7 +40,7 @@
 					<?php endforeach; ?>
 				<?php endif; ?>
 
-				
+
 
 			</div>
 		</div>

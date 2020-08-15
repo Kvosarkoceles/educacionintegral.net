@@ -58,11 +58,18 @@
                   <!-- select -->
                   <div class="form-group">
                     <label>Status</label>
-                    <select class="form-control" name="status" id="status" >
+                    <select class="form-control" name="status" id="status">
                       <option value="1">Activado</option>
                       <option value="o"> Desactivado</option>
                     </select>
                   </div>
+                </div>
+              </div>
+              <!-- Tercera fila curriculum-->
+              <div class="row">
+                <div class="col-sm-12">
+                  <label for="descripcion_pagina">Curiculum</label>
+                  <textarea name="curriculum" id="curriculum" rows="8" cols="80" class="summernote"></textarea>
                 </div>
               </div>
               <div class="row">

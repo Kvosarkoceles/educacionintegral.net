@@ -9,14 +9,7 @@ class Slider_model extends CI_Model
 		$resultados = $this->db->get();
 		return $resultados->result();
 	}
-	public function getList()
-	{
-		 $this->db->select("s.*");
-		$this->db->from("sliders s");
-		$this->db->where("idStatus",1);
-		$resultados = $this->db->get();
-		return $resultados->result(); 
-	}
+
 	public function getSlider($id)
 	{
 		$this->db->select("s.*");
@@ -29,16 +22,18 @@ class Slider_model extends CI_Model
 	{
 		return $this->db->insert("sliders", $data);
 	}
-	public function getMenuStatus(){
+	public function getMenuStatus()
+	{
 		$this->db->cache_on();
 		$this->db->select("s.*");
 		$this->db->from("menu_status s");
 		$resultados = $this->db->get();
-		return $resultados ->result();
+		return $resultados->result();
 	}
 
-	public function update($id,$data){
-		$this->db->where("id",$id);
-		return $this->db->update("sliders",$data);
+	public function update($id, $data)
+	{
+		$this->db->where("id", $id);
+		return $this->db->update("sliders", $data);
 	}
 }

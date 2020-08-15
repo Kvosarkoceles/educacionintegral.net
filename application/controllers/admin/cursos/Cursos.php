@@ -23,16 +23,21 @@ class Cursos extends CI_Controller
     }
     public function add()
     {
+        $data  = array(
+           
+            'menu_profesores' => $this->Cursos_model->getMenuProfesores()
+        );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/cursos/add');
+        $this->load->view('admin/pagina/cursos/cursos/add', $data);
         $this->load->view('admin/layouts/footer');
     }
     public function edit($id)
     {
         $data  = array(
             'curso' => $this->Cursos_model->getCurso($id),
-            'menu_status' => $this->Cursos_model->getMenuStatus()
+            'menu_status' => $this->Cursos_model->getMenuStatus(),
+            'menu_profesores' => $this->Cursos_model->getMenuProfesores(),
         );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
@@ -42,8 +47,11 @@ class Cursos extends CI_Controller
     public function store()
     {
         $nombre = $this->input->post("nombre");
-        $descripcion = $this->input->post("descripcion");        
+        $subtitulo = $this->input->post("subtitulo");
+        $descripcion = $this->input->post("descripcion");    
+        $popular = $this->input->post("popular");  
         $status = $this->input->post("status");
+        $profesor = $this->input->post("profesor");
 
         $mi_archivo = 'mi_archivo';
         $config['upload_path'] = 'assets/images/cursos';
@@ -63,7 +71,10 @@ class Cursos extends CI_Controller
             $archivo = $file_info['file_name'];
             $data  = array(
                 'nombre' => $nombre,
-                'descripcion' => $descripcion,                
+                'subtitulo' => $subtitulo,   
+                'descripcion' => $descripcion,   
+                'popular' => $popular, 
+                'id_profesor' => $profesor,               
                 'imagen' => "assets/images/cursos/" . $archivo,
                 'fechaRegistro' => date("Y") . "-" . date("m") . "-" . date("d"),
                 'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d"),
@@ -122,13 +133,19 @@ class Cursos extends CI_Controller
     public function update($id)
     {
         $nombre = $this->input->post("nombre");
-        $descripcion = $this->input->post("descripcion");       
+        $subtitulo = $this->input->post("subtitulo");
+        $descripcion = $this->input->post("descripcion");    
+        $popular = $this->input->post("popular");   
         $status = $this->input->post("status");
+        $profesor = $this->input->post("profesor");
 
         $data = array(
             'nombre' => $nombre,
+            'subtitulo' => $subtitulo, 
             'descripcion' => $descripcion,         
+            'popular' => $popular,
             'idStatus' => $status,
+            'id_profesor' => $profesor,
             'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
         );
         if ($this->Cursos_model->update($id, $data)) {
