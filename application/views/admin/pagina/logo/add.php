@@ -1,3 +1,28 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Logo</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="<?php echo base_url();?>admin/">Inicio</a></li>
+                <li class="breadcrumb-item active">logo</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+
+
+
+
+
+      
+      <!-- /.content-header -->
 <div class="col-lg-12 mt-5">
   <form action="<?php echo base_url();?>admin/pagina/logo/imagenStore/1" method="POST" enctype="multipart/form-data">
    

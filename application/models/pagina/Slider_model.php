@@ -1,9 +1,10 @@
-<?php
+	<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 class Slider_model extends CI_Model
 {
 	public function getSliders()
 	{
+		$this->db->cache_on();
 		$this->db->select("s.*");
 		$this->db->from("sliders s");
 		$resultados = $this->db->get();
@@ -20,6 +21,7 @@ class Slider_model extends CI_Model
 	}
 	public function save($data)
 	{
+		$this->db->cache_delete_all();
 		return $this->db->insert("sliders", $data);
 	}
 	public function getMenuStatus()
@@ -33,6 +35,7 @@ class Slider_model extends CI_Model
 
 	public function update($id, $data)
 	{
+		$this->db->cache_delete_all();
 		$this->db->where("id", $id);
 		return $this->db->update("sliders", $data);
 	}

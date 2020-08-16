@@ -5,6 +5,7 @@ class Pagina_model extends CI_Model
 
 	public function getSliders()
 	{
+		$this->db->cache_on();
 		$this->db->select("s.*");
 		$this->db->from("sliders s");
 		$this->db->where("idStatus", 1);
@@ -13,6 +14,7 @@ class Pagina_model extends CI_Model
 	}
 	public function getCursosPopulares()
 	{
+		$this->db->cache_on();
 		$this->db->select("c.*,
 		 	ms.nombre as profesor,
 			ms.primerApellido as profesorApellido,

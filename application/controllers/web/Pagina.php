@@ -25,9 +25,12 @@ class Pagina extends CI_Controller
 
 	public function nosotros()
 	{
+		$data  = array(			
+			'populares' => $this->Pagina_model->getCursosPopulares()
+		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
-		$this->load->view('web/nosotros');
+		$this->load->view('web/nosotros',$data);
 		$this->load->view('layouts/footer');
 	}
 

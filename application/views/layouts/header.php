@@ -15,6 +15,9 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/courses_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/courses_responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/styles/news_responsive.css">
+
 </head>
 <body>
 
