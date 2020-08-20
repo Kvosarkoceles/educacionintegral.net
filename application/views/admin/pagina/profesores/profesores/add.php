@@ -43,7 +43,7 @@
                   <!-- text input -->
                   <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
                   </div>
                 </div>
                 <div class="col-sm-3">
@@ -56,13 +56,13 @@
                 <div class="col-sm-3">
                   <div class="form-group">
                     <label>Primer Apellido</label>
-                    <input type="text" class="form-control" placeholder="Primer Apellido" id="primerApellido" name="primerApellido">
+                    <input type="text" class="form-control" placeholder="Primer Apellido" id="primerApellido" name="primerApellido" required>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="form-group">
                     <label>Segundo Apellido</label>
-                    <input type="text" class="form-control" placeholder="Segundo Apellido" id="segundoApellido" name="segundoApellido">
+                    <input type="text" class="form-control" placeholder="Segundo Apellido" id="segundoApellido" name="segundoApellido" required>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Carrera</label>
-                    <input type="text" class="form-control" placeholder="Carrera" id="carrera" name="carrera">
+                    <input type="text" class="form-control" placeholder="Carrera" id="carrera" name="carrera" required>
                   </div>
                 </div>
                 <div class="col-sm-6">

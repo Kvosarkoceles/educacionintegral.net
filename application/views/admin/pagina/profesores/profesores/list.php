@@ -56,9 +56,7 @@
                               unknown
                             <?php endif; ?>
                           </td>
-                          <td>
-                            <a href="<?php echo base_url(); ?><?php echo $profesor->idStatus; ?>" target="_blank">Ver</a>
-                          </td>
+                          <td><a href="<?php echo base_url(); ?>admin/profesores/profesores/view/<?php echo $profesor->id; ?>">ver</a></td>
                           <td><a href="<?php echo base_url(); ?>admin/profesores/profesores/edit/<?php echo $profesor->id; ?>">editar</a></td>
                           <td>eliminar</td>
                         </tr>

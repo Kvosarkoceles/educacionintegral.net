@@ -143,5 +143,16 @@
 
 </script>
 
+
+<!-- Summernote -->
+<script src="<?php echo base_url();?>assets/plugins/summernote/summernote-bs4.min.js"></script>
+<script>
+  $(function () {
+    // Summernote
+    $('#curriculum').summernote()
+   
+  })
+</script>
+
 </body>
 </html>
