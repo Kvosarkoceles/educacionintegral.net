@@ -9,7 +9,6 @@
 				<span>Integra</span>
 			</div>
 		</div>
-
 		<!-- Main Navigation -->
 		<nav class="main_nav_container">
 			<div class="main_nav">
@@ -19,7 +18,7 @@
 					<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 					<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
 					<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
-					<li class="main_nav_item"><a href="/">Contacto</a></li>
+					<!-- <li class="main_nav_item"><a href="/">Contacto</a></li> -->
 				</ul>
 			</div>
 		</nav>
@@ -53,7 +52,7 @@
 				<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
 				<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
 				<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
-				<li class="main_nav_item"><a href="/">Contacto</a></li>
+			<!-- 	<li class="main_nav_item"><a href="/">Contacto</a></li> -->
 			</ul>
 
 			<!-- Menu Social -->
@@ -68,7 +67,7 @@
 				</ul>
 			</div>
 
-			<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+			<div class="menu_copyright menu_mm">Sarkoceles All rights reserved</div>
 		</div>
 
 	</div>

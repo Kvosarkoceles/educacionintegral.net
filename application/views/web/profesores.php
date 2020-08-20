@@ -21,10 +21,10 @@
 							<div class="card">
 								<div class="card_img">
 									<div class="card_plus trans_200 text-center"><a href="#"></a></div>
-									<img class="card-img-top trans_200" src="<?php echo base_url(); ?><?php echo $profesor->imagen; ?>" alt="https://unsplash.com/@mehdizadeh">
+									<img class="card-img-top trans_200" src="<?php echo base_url(); ?><?php echo $profesor->imagen; ?>" alt="<?php echo $profesor->nombre; ?>">
 								</div>
 								<div class="card-body text-center">
-									<div class="card-title"><a href="#"><?php echo $profesor->nombre; ?> <?php echo $profesor->primerApellido; ?> </a></div>
+									<div class="card-title"><a href="<?php echo base_url(); ?>profesor/<?php echo $profesor->id; ?>"><?php echo $profesor->nombre; ?> <?php echo $profesor->primerApellido; ?> </a></div>
 									<div class="card-text"><?php echo $profesor->carrera; ?></div>
 								</div>
 							</div>

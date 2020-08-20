@@ -35,16 +35,18 @@
 							</div>
 						</div>
 					</a>
-					<!-- <Biblioteca> -->
+					<!-- <Noticias> -->
+					<a id="link" href="<?php echo base_url(); ?>noticias">
 					<div class="col-lg-4 hero_box_col">
 						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="<?php echo base_url(); ?>assets/images/books.svg" class="svg" alt="">
 							<div class="hero_box_content">
-								<h2 class="hero_box_title">Nuestra biblioteca</h2>
-								<a href="courses.html" class="hero_box_link">ver mas</a>
+								<h2 class="hero_box_title">Nuestras Noticias</h2>
+								<a href="<?php echo base_url(); ?>noticias" class="hero_box_link">ver mas</a>
 							</div>
 						</div>
 					</div>
+					</a>
 					<!-- <Profesores> -->
 					<a id="link" href="<?php echo base_url(); ?>profesores">
 						<div class="col-lg-4 hero_box_col">
@@ -177,7 +179,7 @@
 		</div>
 	</div>
 	<!-- Events -->
-	<div class="events page_section">
+	<!-- <div class="events page_section">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -186,58 +188,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="event_items">
-				<!-- Event Item -->
-				<div class="row event_item">
-					<div class="col">
-						<div class="row d-flex flex-row align-items-end">
-							<div class="col-lg-2 order-lg-1 order-2">
-								<div class="event_date d-flex flex-column align-items-center justify-content-center">
-									<div class="event_day">07</div>
-									<div class="event_month">Enero</div>
-								</div>
-							</div>
-							<div class="col-lg-6 order-lg-2 order-3">
-								<div class="event_content">
-									<div class="event_name"><a class="trans_200" href="#">Festival estudiantil</a></div>
-									<div class="event_location">Parque central</div>
-									<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 order-lg-3 order-1">
-								<div class="event_image">
-									<img src="<?php echo base_url(); ?>assets/images/event_1.jpg" alt="https://unsplash.com/@theunsteady5">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Event Item -->
-				<div class="row event_item">
-					<div class="col">
-						<div class="row d-flex flex-row align-items-end">
-							<div class="col-lg-2 order-lg-1 order-2">
-								<div class="event_date d-flex flex-column align-items-center justify-content-center">
-									<div class="event_day">07</div>
-									<div class="event_month">Enero</div>
-								</div>
-							</div>
-							<div class="col-lg-6 order-lg-2 order-3">
-								<div class="event_content">
-									<div class="event_name"><a class="trans_200" href="#">Jornada de puertas abiertas en el campus de la Universidad</a></div>
-									<div class="event_location">Prque central</div>
-									<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 order-lg-3 order-1">
-								<div class="event_image">
-									<img src="<?php echo base_url(); ?>assets/images/event_2.jpg" alt="https://unsplash.com/@claybanks1989">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Event Item -->
+			<div class="event_items">		
 				<div class="row event_item">
 					<div class="col">
 						<div class="row d-flex flex-row align-items-end">
@@ -264,4 +215,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->

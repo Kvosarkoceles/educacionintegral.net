@@ -7,7 +7,7 @@ class Auth extends CI_Controller {
 	}
 	public function index(){
 		if ($this->session->userdata("login")) {
-			redirect(base_url()."admin/Administrador");
+			redirect(base_url()."admin/administrador");
 		}
 		else{
 			$this->load->view("admin/login");
@@ -25,6 +25,7 @@ class Auth extends CI_Controller {
 			$data  = array(
 				'id' => $res->id,
 				'nombre' => $res->nombre,
+				'avatar' => $res->avatar,
 				'username' => $res->username,
 				'rol' => $res->id_rol,
 				'login' => TRUE

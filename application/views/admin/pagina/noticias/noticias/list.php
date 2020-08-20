@@ -5,7 +5,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Profesores</h1>
+              <h1 class="m-0 text-dark">Noticias</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -24,7 +24,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Profesores</h3>
+                <h3 class="card-title">Noticias</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -32,34 +32,38 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>Nombres</th>
-                      <th>carrera</th>
-                      <th>Status</th>
+                      <th>titulo</th>
+                      <th>autor</th>
+                      <th>fecha</th>
+                      <th>tag</th>
+                      <th>idStatus</th>
                       <th>ver</th>
                       <th>editar</th>
                       <th>eliminar</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <?php if (!empty($profesores)) : ?>
-                      <?php foreach ($profesores as $profesor) : ?>
+                    <?php if (!empty($noticias)) : ?>
+                      <?php foreach ($noticias as $noticia) : ?>
                         <tr>
-                          <td><?php echo $profesor->id; ?></td>
-                          <td><?php echo $profesor->nombre; ?> <?php echo $profesor->segundoNombre; ?> <?php echo $profesor->primerApellido; ?> <?php echo $profesor->segundoApellido; ?></td>
-                          <td><?php echo $profesor->carrera; ?></td>
+                          <td><?php echo $noticia->id; ?></td>
+                          <td><?php echo $noticia->titulo; ?></td>
+                          <td><?php echo $noticia->autor; ?></td>
+                          <td><?php echo $noticia->fecha; ?></td>
+                          <td><?php echo $noticia->tag; ?></td>
                           <td>
-                            <?php if ($profesor->idStatus == 2) : ?>
+                            <?php if ($noticia->idStatus == 2) : ?>
                               Desactivado
-                            <?php elseif ($profesor->idStatus == 1) : ?>
+                            <?php elseif ($noticia->idStatus == 1) : ?>
                               Activado
                             <?php else : ?>
                               unknown
                             <?php endif; ?>
                           </td>
                           <td>
-                            <a href="<?php echo base_url(); ?><?php echo $profesor->idStatus; ?>" target="_blank">Ver</a>
+                            <a href="<?php echo base_url(); ?><?php echo $noticia->idStatus; ?>" target="_blank">Ver</a>
                           </td>
-                          <td><a href="<?php echo base_url(); ?>admin/profesores/profesores/edit/<?php echo $profesor->id; ?>">editar</a></td>
+                          <td><a href="<?php echo base_url(); ?>admin/noticias/noticias/edit/<?php echo $noticia->id; ?>">editar</a></td>
                           <td>eliminar</td>
                         </tr>
                       <?php endforeach; ?>
@@ -68,9 +72,11 @@
                   <tfoot>
                     <tr>
                       <th>#</th>
-                      <th>Nombres</th>
-                      <th>carrera</th>
-                      <th>Status</th>
+                      <th>titulo</th>
+                      <th>autor</th>
+                      <th>fecha</th>
+                      <th>tag</th>
+                      <th>idStatus</th>
                       <th>ver</th>
                       <th>editar</th>
                       <th>eliminar</th>

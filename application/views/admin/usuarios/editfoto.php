@@ -5,13 +5,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Noticias</h1>
+          <h1 class="m-0 text-dark">Usuarios</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin">Inicio</a></li>
             <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/noticias/noticias">Noticias</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/noticias/noticias/edit/<?php echo $noticia->id; ?>">perfil</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/noticias/noticias/edit/<?php echo $usuario->id; ?>">perfil</a></li>
             <li class="breadcrumb-item active">Edita Foto</li>
           </ol>
         </div><!-- /.col -->
@@ -20,19 +20,20 @@
   </div>
   <!-- /.content-header -->
   <div class="col-lg-12 mt-5">
-    <form action="<?php echo base_url(); ?>admin/noticias/noticias/imagenupdate" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo base_url(); ?>admin/usuarios/imagenupdate" method="POST" enctype="multipart/form-data">
       <div class="card">
         <div class="card-body">
-          <h3 class="header-title">Cambiar foto (690px * 520px)</h3>
+          <h3 class="header-title">Cambiar foto </h3>
           <div class="form-row align-items-center">
             <div class="col-sm-12 my-1 ">
 
               <div class="col-lg-12 col-md-6 col-sm-6">
                 <div class="form-group" align="center">
-                  <input type="hidden" class="form-control" value="<?php echo $noticia->imagen; ?>" id="imagenold" name="imagenold">
-                  <input type="hidden" class="form-control" value="<?php echo $noticia->id; ?>" id="id" name="id">
-                  <input type="hidden" class="form-control" value="<?php echo $noticia->titulo; ?>" id="nombre" name="nombre">       
-                  <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $noticia->imagen; ?>" />           
+                  <input type="hidden" class="form-control" value="<?php echo $usuario->avatar; ?>" id="imagenold" name="imagenold">
+                  <input type="hidden" class="form-control" value="<?php echo $usuario->nombre; ?>" id="nombre" name="nombre">  
+                  <input type="hidden" class="form-control" value="<?php echo $usuario->username; ?>" id="nick" name="nick">  
+                  <input type="hidden" class="form-control" value="<?php echo $usuario->id; ?>" id="id" name="id">                       
+                  <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $usuario->avatar; ?>" />           
                 </div>
               </div>
             </div>

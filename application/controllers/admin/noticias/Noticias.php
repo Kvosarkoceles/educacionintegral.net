@@ -9,60 +9,62 @@ class Noticias extends CI_Controller
         if (!$this->session->userdata("login")) {
             redirect(base_url());
         }
-        $this->load->model("pagina/Cursos_model");
+        $this->load->model("pagina/Noticias_model");
     }
     public function index()
     {
         $data  = array(
-            'cursos' => $this->Cursos_model->getCursos(),
+            'noticias' => $this->Noticias_model->getNoticias(),
         );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/cursos/list', $data);
+        $this->load->view('admin/pagina/noticias/noticias/list', $data);
         $this->load->view('admin/layouts/footer');
     }
     public function add()
     {
         $data  = array(
-           
-            'menu_profesores' => $this->Cursos_model->getMenuProfesores()
+            'tags' => $this->Noticias_model->getTags(),
+            'menu_status' => $this->Noticias_model->getMenuStatus(),
         );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/cursos/add', $data);
+        $this->load->view('admin/pagina/noticias/noticias/add', $data);
         $this->load->view('admin/layouts/footer');
     }
     public function edit($id)
     {
         $data  = array(
-            'curso' => $this->Cursos_model->getCurso($id),
-            'menu_status' => $this->Cursos_model->getMenuStatus(),
-            'menu_profesores' => $this->Cursos_model->getMenuProfesores(),
+            'noticia' => $this->Noticias_model->getNoticia($id),
+            'tags' => $this->Noticias_model->getTags(),
+            'menu_status' => $this->Noticias_model->getMenuStatus(),
         );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/cursos/edit', $data);
+        $this->load->view('admin/pagina/noticias/noticias/edit', $data);
         $this->load->view('admin/layouts/footer');
     }
     public function store()
     {
-        $nombre = $this->input->post("nombre");
-        $subtitulo = $this->input->post("subtitulo");
-        $descripcion = $this->input->post("descripcion");    
-        $popular = $this->input->post("popular");  
+        $titulo = $this->input->post("titulo");
+        $autor = $this->input->post("autor");
+        $noticia = $this->input->post("noticia");
+        $descripcion = $this->input->post("descripcion");
+        $imagen = $this->input->post("imagen");
+        $fecha = $this->input->post("fecha");
+        $tag = $this->input->post("tag");
         $status = $this->input->post("status");
-        $profesor = $this->input->post("profesor");
 
         $mi_archivo = 'mi_archivo';
-        $config['upload_path'] = 'assets/images/cursos';
+        $config['upload_path'] = 'assets/images/noticias';
         $config['allowed_types'] = 'gif|jpg|png';
-        $config['file_name'] = $nombre.date("Y") . "-" . date("m") . "-" . date("d");
+        $config['file_name'] = $titulo . date("Y") . "-" . date("m") . "-" . date("d");
         $config['max_size'] = "50000"; //tamaño en kilobytes
         $config['max_width'] = "2000";
         $config['max_height'] = "2000";
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload($mi_archivo)) {
-            redirect(base_url() . "admin/cursos/cursos/add");
+            redirect(base_url() . "admin/noticias/noticias/add");
             echo '<script type="text/javascript">
 								alert("Agrege una imagen");
 							</script>';
@@ -70,21 +72,22 @@ class Noticias extends CI_Controller
             $file_info = $this->upload->data();
             $archivo = $file_info['file_name'];
             $data  = array(
-                'nombre' => $nombre,
-                'subtitulo' => $subtitulo,   
-                'descripcion' => $descripcion,   
-                'popular' => $popular, 
-                'id_profesor' => $profesor,               
-                'imagen' => "assets/images/cursos/" . $archivo,
+                'titulo' => $titulo,
+                'autor' => $autor,
+                'descripcion' => $descripcion,
+                'texto' => $noticia,
+                'imagen' => "assets/images/noticias/" . $archivo,
+                'fecha' => $fecha,
+                'id_tag' => $tag,
                 'fechaRegistro' => date("Y") . "-" . date("m") . "-" . date("d"),
                 'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d"),
                 'idStatus' => $status
             );
-            if ($this->Cursos_model->save($data)) {
-                redirect(base_url() . "admin/cursos/cursos");
+            if ($this->Noticias_model->save($data)) {
+                redirect(base_url() . "admin/noticias/noticias");
             } else {
                 $this->session->set_flashdata("error", "No se pudo guardar la informacion");
-                redirect(base_url() . "admin/cursos/cursos/add");
+                redirect(base_url() . "admin/noticias/noticias/add");
             }
         }
         //	$file_info = $this->upload->data();
@@ -97,13 +100,12 @@ class Noticias extends CI_Controller
     public function imagenupdate()
     {
         $imagenold = $this->input->post("imagenold");
-        $nombre = $this->input->post("nombre");        
+        $nombre = $this->input->post("nombre");
         $id = $this->input->post("id");
-        unlink($imagenold);
+
         $mi_imagen = 'mi_archivo';
-        $config['upload_path'] = "assets/images/cursos";
-        $config['overwrite'] = "TRUE";
-        $config['file_name'] = $nombre.date("Y") . "-" . date("m") . "-" . date("d");
+        $config['upload_path'] = "assets/images/noticias";
+        $config['encrypt_name'] = TRUE;
         $config['allowed_types'] = "gif|jpg|jpeg|png";
         $config['max_size'] = "50000";
         $config['max_width'] = "2000";
@@ -119,65 +121,67 @@ class Noticias extends CI_Controller
             $file_info = $this->upload->data();
             $archivo = $file_info['file_name'];
             $data  = array(
-                'imagen' => "assets/images/cursos/" . $archivo,
+                'imagen' => "assets/images/noticias/" . $archivo,
                 'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
             );
-            if ($this->Cursos_model->update($id, $data)) {
-                redirect(base_url() . "admin/cursos/cursos");
+            if ($this->Noticias_model->update($id, $data)) {
+                unlink($imagenold);
+                redirect(base_url() . "admin/noticias/noticias");
             } else {
                 $this->session->set_flashdata("error", "No se pudo guardar la informacion");
-                redirect(base_url() . "admin/cursos/cursos/add");
+                redirect(base_url() . "admin/noticias/noticias/add");
             }
         }
     }
     public function update($id)
     {
-        $nombre = $this->input->post("nombre");
-        $subtitulo = $this->input->post("subtitulo");
-        $descripcion = $this->input->post("descripcion");    
-        $popular = $this->input->post("popular");   
+        $titulo = $this->input->post("titulo");
+        $autor = $this->input->post("autor");
+        $noticia = $this->input->post("noticia");
+        $descripcion = $this->input->post("descripcion");
+        $fecha = $this->input->post("fecha");
+        $tag = $this->input->post("tag");
         $status = $this->input->post("status");
-        $profesor = $this->input->post("profesor");
-
         $data = array(
-            'nombre' => $nombre,
-            'subtitulo' => $subtitulo, 
-            'descripcion' => $descripcion,         
-            'popular' => $popular,
-            'idStatus' => $status,
-            'id_profesor' => $profesor,
-            'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d")
+            'titulo' => $titulo,
+            'autor' => $autor,
+            'descripcion' => $descripcion,
+            'texto' => $noticia,
+            'fecha' => $fecha,
+            'id_tag' => $tag,
+            'fechaModificacion' => date("Y") . "-" . date("m") . "-" . date("d"),
+            'idStatus' => $status
         );
-        if ($this->Cursos_model->update($id, $data)) {
-            redirect(base_url() . "admin/cursos/cursos/");
+        if ($this->Noticias_model->update($id, $data)) {
+            redirect(base_url() . "admin/noticias/noticias/");
         } else {
             $this->session->set_flashdata("error", "No se pudo guardar la informacion");
-            redirect(base_url() . "admin/cursos/cursos/edit/" . $id);
+            redirect(base_url() . "admin/noticias/noticias/add/");
         }
     }
     public function cabiarfoto($id)
     {
         $data  = array(
-            'curso' => $this->Cursos_model->getCurso($id)
+            'noticia' => $this->Noticias_model->getNoticia($id)
         );
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/cursos/editfoto', $data);
+        $this->load->view('admin/pagina/noticias/noticias/editfoto', $data);
         $this->load->view('admin/layouts/footer');
     }
     public function portada()
     {
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/layouts/aside');
-        $this->load->view('admin/pagina/cursos/portada/edit');
+        $this->load->view('admin/pagina/noticias/portada/edit');
         $this->load->view('admin/layouts/footer');
     }
 
     public function portadaupdate()
     {
-        unlink('assets/images/cursos/background.jpg');
+        unlink('assets/images/noticias/background.jpg');
         $mi_imagen = 'mi_archivo';
-        $config['upload_path'] = "assets/images/cursos";
+        $config['upload_path'] = "assets/images/noticias";
         $config['overwrite'] = "TRUE";
         $config['file_name'] = "background";
         $config['allowed_types'] = "jpg";
@@ -192,6 +196,6 @@ class Noticias extends CI_Controller
             return;
         }
         $data['uploadSuccess'] = $this->upload->data();
-        redirect(base_url() . "admin/cursos/cursos/portada");
+        redirect(base_url() . "admin/noticias/noticias/portada");
     }
 }

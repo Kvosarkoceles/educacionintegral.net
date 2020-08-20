@@ -1,32 +1,96 @@
-<div class="col-lg-12 mt-5">
-  <div class="card">
-    <div class="card-header" align="center">
-      <img src="<?php echo base_url();?>uploads/imagenes/usuarios/100x100/<?php echo $usuario->avatar; ?>" class="img-fluid img-thumbnail" alt="<?php echo $usuario->username; ?>">
-    </div>
-    <div class="card-body">
-      <h2 class="text-primary" align="center">
-        <?php echo $usuario->nombre; ?>
-        <br>
-        <small class="text-muted, text-success"><?php echo $usuario->username; ?></small>
-      </h2>
-      <h5 class="text-dark">
-        Estado:
-        <small class="text-muted, text-secondary"><?php echo $usuario->status; ?></small>
-      </h5>
-      <h5 class="text-dark">
-        Rol:
-        <small class="text-muted, text-secondary"><?php echo $usuario->rol; ?></small>
-      </h5>
-      <br>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"  align="left">
-
-          <a href="<?php echo base_url();?>admin/usuarios/avatarUpdate/<?php echo $usuario->id?>" class="btn btn-outline-primary"> <i class="fa fa-photo"></i> Cambiar Abatar</a>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"  align="right">
-          <a href="<?php echo base_url();?>admin/usuarios/password/<?php echo $usuario->id?>" class="btn btn-outline-primary"> <i class="fa fa-refresh"></i> Cambiar contraseña</a>
-        </div>
-      </div>
-    </div>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Usuarios</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/profesores/profesores/">Lista</a></li>
+            <li class="breadcrumb-item active">editar</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
   </div>
-</div>
+  <!-- /.content-header -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- right column -->
+        <div class="col-md-12">
+          <!-- general form elements disabled -->
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3 class="card-title">Usuario Configuración</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form action="" method="POST" enctype="multipart/form-data">
+                <!-- Primera Fila foto del usuario -->
+                <div class="row">
+                  <div class="col-sm-12 my-1">
+                    <div class="form-group" align="center">
+                      <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $usuario->avatar; ?>" width="30%" height="30%">
+                      <h2>
+                        <?php echo $usuario->username; ?>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <!-- Segunda Fila -->
+                <div class="row">
+                  <!-- Nombre -->
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label>nombre</label>
+                      <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $usuario->nombre; ?>" id="nombre" name="nombre">
+                    </div>
+                  </div>
+                  <!-- Username -->
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label>Username</label>
+                      <input type="text" class="form-control" placeholder="Enter ..." value="<?php echo $usuario->username; ?>" id="username" name="username">
+                    </div>
+                  </div>
+
+                
+                </div>
+
+
+
+                <!-- Cuarta fila -->
+                <div class="row">
+                  <!-- Cambiar contraseña -->
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <a href="<?php echo base_url(); ?>admin/usuarios/cabiarfoto/<?php echo $usuario->id; ?>"> Cambiar la imagen</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <a href="<?php echo base_url(); ?>admin/usuarios/password/<?php echo $usuario->id; ?>"> Cambiar contraseña</a>
+                    </div>
+                  </div>
+                  <!-- Boton guardar -->
+                  <div class="col-sm-6  my-1 ">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-outline-secondary mb-3">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+          </div>
+        </div>
+        <!--/.col (right) -->
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>

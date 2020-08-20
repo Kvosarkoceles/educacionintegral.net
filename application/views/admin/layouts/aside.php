@@ -45,6 +45,15 @@
       </a>
       <!-- Sidebar -->
       <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="<?php echo base_url(); ?><?php echo $this->session->userdata("avatar")?>" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="<?php echo base_url(); ?>admin/usuarios/configuracion/<?php echo $this->session->userdata("id")?>" class="d-block"><?php echo $this->session->userdata("username")?></a>
+          </div>
+        </div>
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -175,13 +184,13 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/profesores/profesores/portada" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/noticias/tags" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>list</p>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/profesores/profesores/portada" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/noticias/tags/add" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>add</p>
                       </a>
@@ -198,13 +207,13 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/profesores/profesores/" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/noticias/noticias" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>list</p>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="<?php echo base_url(); ?>admin/profesores/profesores/add" class="nav-link">
+                      <a href="<?php echo base_url(); ?>admin/noticias/noticias/add" class="nav-link">
                         <i class="far fa-dot-circle nav-icon"></i>
                         <p>add</p>
                       </a>
@@ -284,7 +293,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo base_url(); ?>/admin/usuarios/add" class="nav-link">
+                  <a href="<?php echo base_url(); ?>admin/usuarios/add" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Add</p>
                   </a>
