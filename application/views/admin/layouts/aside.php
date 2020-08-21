@@ -7,24 +7,7 @@
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="index3.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
       </ul>
-      <!-- SEARCH FORM -->
-      <form class="form-inline ml-3">
-        <div class="input-group input-group-sm">
-          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-navbar" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- Notifications Dropdown Menu -->
@@ -48,10 +31,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="<?php echo base_url(); ?><?php echo $this->session->userdata("avatar")?>" class="img-circle elevation-2" alt="User Image">
+            <img src="<?php echo base_url(); ?><?php echo $this->session->userdata("avatar") ?>" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="<?php echo base_url(); ?>admin/usuarios/configuracion/<?php echo $this->session->userdata("id")?>" class="d-block"><?php echo $this->session->userdata("username")?></a>
+            <a href="<?php echo base_url(); ?>admin/usuarios/configuracion/<?php echo $this->session->userdata("id") ?>" class="d-block"><?php echo $this->session->userdata("username") ?></a>
           </div>
         </div>
         <!-- Sidebar Menu -->
@@ -110,8 +93,63 @@
                     </li>
                   </ul>
                 </li>
+
               </ul>
             </li>
+
+            <!-- Nosotros -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  Nosotros
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      portada
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/nosotros/portada" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>add</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Contenido
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/nosotros" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Lista</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="<?php echo base_url(); ?>admin/pagina/nosotros/add" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Add</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
             <!-- Profesores -->
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -274,7 +312,30 @@
                 </li>
               </ul>
             </li>
-
+            <!-- Servicios -->
+             <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  Servicios
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?php echo base_url(); ?>admin/pagina/servicios" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lista</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php echo base_url(); ?>admin/pagina/servicios/add" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li class="nav-header">ADMINISTRACION</li>
             <!-- Usiarios -->
             <li class="nav-item">

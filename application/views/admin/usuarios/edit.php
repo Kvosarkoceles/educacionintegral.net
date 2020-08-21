@@ -36,7 +36,7 @@
                 <div class="row">
                   <div class="col-sm-12 my-1">
                     <div class="form-group" align="center">
-                      <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $usuario->avatar; ?>" width="50%" height="50%">
+                      <img id="imgSalida" src="<?php echo base_url(); ?><?php echo $usuario->avatar; ?>" width="30%" height="30%">
                     </div>
                   </div>
                 </div>

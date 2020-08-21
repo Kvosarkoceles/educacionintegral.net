@@ -58,6 +58,17 @@
                             </div>
                             <!-- Tercera fila status y profesor -->
                             <div class="row">
+                            <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label>Popular</label>
+                                        <select class="custom-select" name="popular" id="popular">
+                                            <?php foreach ($menu_status as $status) : ?>
+                                                <option value="<?php echo $status->id; ?>" <?php echo $status->id == $curso->popular ? "selected" : "" ?>><?php echo $status->nombre; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-sm-3">
                                     <div class="form-group">
                                         <label>Status</label>
@@ -68,16 +79,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="form-group">
-                                        <label>Popular</label>
-                                        <select class="custom-select" name="popular" id="popular">
-                                            <?php foreach ($menu_status as $status) : ?>
-                                                <option value="<?php echo $status->id; ?>" <?php echo $status->id == $curso->popular ? "selected" : "" ?>><?php echo $status->nombre; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
+                                
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Profesor</label>

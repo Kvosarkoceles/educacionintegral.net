@@ -2,7 +2,7 @@
 
 	<div class="home">
 		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(<?php echo base_url(); ?>assets/images/courses_background.jpg)"></div>
+			<div class="home_background prlx" style="background-image:url(<?php echo base_url(); ?>assets/images/nosotros/background.jpg)"></div>
 		</div>
 		<div class="home_content">
 			<h1>Nosotros</h1>
@@ -24,31 +24,23 @@
 
 			<div class="row services_row">
 
+			<?php if (!empty($nosotros)) : ?>
+				<?php foreach ($nosotros as $nost) : ?>
+
+
+
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/earth-globe.svg" alt="">
+						<img src="<?php echo base_url(); ?><?php echo $nost->imagen; ?>" alt="">
 					</div>
-					<h3>MISIÓN</h3>
-					<p>Brindar a los alumnos una propuesta educativa basada en la formación integral del alumno a distancia, apoyado de profesores certificados en su disciplina; para el cumplimiento de su objetivo educativo.</p>
+					<h3><?php echo $nost->nombre; ?></h3>
+					<p><?php echo $nost->texto; ?></p>
 				</div>
-				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/earth-globe.svg" alt="">
-					</div>
-					<h3>VISIÓN</h3>
-					<p>Formar una comunidad educativa a distancia reconocida por la confianza en su modelo educativo flexible e innovador que promueva el desarrollo de sus potencialidades del alumnado, contando con su diversidad y fomentando el espíritu de superación.</p>
-				</div>
-				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/earth-globe.svg" alt="">
-					</div>
-					<h3>OBJETIVO GENERAL</h3>
-					<p>Ampliar las oportunidades y dotar a los alumnos de conocimientos generales a través de la educación, con la finalidad de impulsar valores sociales como:</p>
-					<li>Compromiso</li>
-					<li>Integridad</li>
-					<li>Responsabilidad</li>
-					<li>Vocación de Servicio</li>
-				</div>
+				
+				<?php endforeach; ?>
+			<?php endif; ?>
+
+
 
 			</div>
 

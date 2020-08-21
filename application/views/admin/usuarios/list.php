@@ -9,26 +9,30 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin">Inicio</a></li>
-            <li class="breadcrumb-item active">lista</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/usuarios">usuarios</a></li>
+            <li class="breadcrumb-item active">editar</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
   <!-- /.content-header -->
-  <!-- Main content -->
+
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div class="card">
+        <!-- right column -->
+        <div class="col-md-12">
+          <!-- general form elements disabled -->
+          <div class="card card-warning">
             <div class="card-header">
-              <h3 class="card-title">Usuarios</h3>
+              <h3 class="card-title">Editar Usuario</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="example2" class="table table-bordered table-hover">
+             
+            <table id="example2" class="table table-bordered table-hover">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -71,16 +75,15 @@
                   </tr>
                 </tfoot>
               </table>
+
+
+
             </div>
             <!-- /.card-body -->
           </div>
-          <!-- /.card -->
-          <!-- /.card -->
         </div>
-        <!-- /.col -->
+        <!--/.col (right) -->
       </div>
       <!-- /.row -->
-    </div>
-    <!-- /.container-fluid -->
+    </div><!-- /.container-fluid -->
   </section>
-  <!-- /.content -->

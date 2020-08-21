@@ -10,25 +10,27 @@
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin">Inicio</a></li>
-                <li class="breadcrumb-item active">lista</li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/noticias/tags/">Lista</a></li>
+                <li class="breadcrumb-item active">editar</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </div>
       <!-- /.content-header -->
-<!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+<section class="content">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Tags</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
+            <!-- right column -->
+            <div class="col-md-12">
+                <!-- general form elements disabled -->
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <h3 class="card-title">Edita Tag</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -54,9 +56,7 @@
                               unknown
                             <?php endif; ?>
                           </td>
-                          <td>
-                            <a href="<?php echo base_url(); ?><?php echo $profesor->idStatus; ?>" target="_blank">Ver</a>
-                          </td>
+                          <td><a href="<?php echo base_url(); ?>admin/noticias/tags/view/<?php echo $profesor->id; ?>">ver</a></td>
                           <td><a href="<?php echo base_url(); ?>admin/noticias/tags/edit/<?php echo $profesor->id; ?>">editar</a></td>
                           <td>eliminar</td>
                         </tr>
@@ -74,16 +74,13 @@
                     </tr>
                   </tfoot>
                 </table>
-              </div>
-              <!-- /.card-body -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+
             </div>
-            <!-- /.card -->
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
+            <!--/.col (right) -->
         </div>
         <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+    </div><!-- /.container-fluid -->
+</section>

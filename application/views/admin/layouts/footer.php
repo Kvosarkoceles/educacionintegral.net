@@ -150,6 +150,10 @@
   $(function () {
     // Summernote
     $('#curriculum').summernote()
+
+    $('#noticia').summernote()
+
+    
    
   })
 </script>

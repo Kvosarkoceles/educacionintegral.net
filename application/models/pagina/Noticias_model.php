@@ -23,9 +23,10 @@ class Noticias_model extends CI_Model
 	public function getNoticia($id)
 	{
 		/* $this->db->cache_on(); */
-		$this->db->select("n.*, tg.nombre as tag, tg.id as tagvalue ");
+		$this->db->select("n.*, tg.nombre as tag, tg.id as tagvalue,ms.nombre as status");
 		$this->db->from("noticias n");
 		$this->db->join("tags tg", "n.id_tag = tg.id");
+		$this->db->join("menu_status ms", "n.idStatus = tg.id");
 		$this->db->where("n.id", $id);
 		$resultado = $this->db->get();
 		return $resultado->row();;

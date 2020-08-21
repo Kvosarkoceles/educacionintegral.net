@@ -42,6 +42,17 @@ class Tags extends CI_Controller
         $this->load->view('admin/pagina/noticias/tags/edit', $data);
         $this->load->view('admin/layouts/footer');
     }
+    public function view($id)
+    {
+        $data  = array(
+            'tag' => $this->Tags_model->getTag($id),
+            'menu_status' => $this->Tags_model->getMenuStatus()
+        );
+        $this->load->view('admin/layouts/header');
+        $this->load->view('admin/layouts/aside');
+        $this->load->view('admin/pagina/noticias/tags/view', $data);
+        $this->load->view('admin/layouts/footer');
+    }
     public function update($id)
     {
         $nombre = $this->input->post("nombre");

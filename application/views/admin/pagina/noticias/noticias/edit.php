@@ -102,7 +102,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <label for="descripcion_pagina">Texto</label>
-                                        <textarea name="noticia" id="noticia" rows="8" cols="80" class="summernote"><?php echo $noticia->texto; ?></textarea>
+                                        <textarea name="noticia" id="noticia" rows="8" cols="80"><?php echo $noticia->texto; ?></textarea>
                                     </div>
                                 </div>
                                 <!-- Cuarta fila -->

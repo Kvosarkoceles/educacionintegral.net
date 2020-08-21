@@ -44,6 +44,18 @@ class Noticias extends CI_Controller
         $this->load->view('admin/pagina/noticias/noticias/edit', $data);
         $this->load->view('admin/layouts/footer');
     }
+    public function view($id)
+    {
+        $data  = array(
+            'noticia' => $this->Noticias_model->getNoticia($id),
+            'tags' => $this->Noticias_model->getTags(),
+            'menu_status' => $this->Noticias_model->getMenuStatus(),
+        );
+        $this->load->view('admin/layouts/header');
+        $this->load->view('admin/layouts/aside');
+        $this->load->view('admin/pagina/noticias/noticias/view', $data);
+        $this->load->view('admin/layouts/footer');
+    }
     public function store()
     {
         $titulo = $this->input->post("titulo");

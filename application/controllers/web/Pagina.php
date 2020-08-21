@@ -15,18 +15,20 @@ class Pagina extends CI_Controller
 	{
 		$data  = array(
 			'sliders' => $this->Pagina_model->getSliders(),
-			'populares' => $this->Pagina_model->getCursosPopulares()
+			'populares' => $this->Pagina_model->getCursosPopulares(),
+			'servicios' => $this->Pagina_model->getServicios()
 		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
-		$this->load->view('web/index',$data);
+		$this->load->view('web/index', $data);
 		$this->load->view('layouts/footer');
 	}
 
 	public function nosotros()
 	{
 		$data  = array(			
-			'populares' => $this->Pagina_model->getCursosPopulares()
+			'populares' => $this->Pagina_model->getCursosPopulares(),
+			'nosotros' => $this->Pagina_model->getNosotros(),
 		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');

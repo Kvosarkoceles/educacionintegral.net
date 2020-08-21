@@ -44,6 +44,18 @@ class Cursos extends CI_Controller
         $this->load->view('admin/pagina/cursos/cursos/edit', $data);
         $this->load->view('admin/layouts/footer');
     }
+    public function view($id)
+    {
+        $data  = array(
+            'curso' => $this->Cursos_model->getCurso($id),
+            'menu_status' => $this->Cursos_model->getMenuStatus(),
+            'menu_profesores' => $this->Cursos_model->getMenuProfesores(),
+        );
+        $this->load->view('admin/layouts/header');
+        $this->load->view('admin/layouts/aside');
+        $this->load->view('admin/pagina/cursos/cursos/view', $data);
+        $this->load->view('admin/layouts/footer');
+    }
     public function store()
     {
         $nombre = $this->input->post("nombre");

@@ -11,9 +11,9 @@ class Administrador extends CI_Controller
 	{
 		parent::__construct();
 		
-		if (!$this->session->userdata("login")) {
+	/*	if (!$this->session->userdata("login")) {
 			redirect(base_url() . "admin/auth");
-		}
+		} */
 
 		$this->load->model("Admin_model");
 	}

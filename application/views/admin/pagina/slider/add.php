@@ -5,12 +5,13 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Dashboard v3</h1>
+              <h1 class="m-0 text-dark">Integra</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Dashboard v3</li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>admin/pagina/slider">list</a></li>
+                <li class="breadcrumb-item active">slider</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -33,7 +34,7 @@
               <div class="row">
                 <div class="col-sm-12 my-1">
                   <div class="form-group" align="center">
-                    <img id="imgSalida" width="100%" height="100%">
+                    <img id="imgSalida" width="30%" height="30%">
                   </div>
                 </div>
               </div>
@@ -42,7 +43,7 @@
                   <!-- text input -->
                   <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -75,7 +76,7 @@
                 <div class="col-sm-6  my-1 ">
                   <div class="form-group">
                     <label for="imagen">Imagen:</label>
-                    <input type="file" name=mi_archivo id=mi_archivo class="form-control" accept=".gif, .jpg, .jpeg, .png">
+                    <input type="file" name=mi_archivo id=mi_archivo class="form-control" accept=".gif, .jpg, .jpeg, .png" required>
                   </div>
                 </div>
                 <div class="col-sm-6 my-1">

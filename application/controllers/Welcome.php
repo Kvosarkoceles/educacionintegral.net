@@ -16,9 +16,13 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$data  = array(
+
+
+
+			$data  = array(
 			'sliders' => $this->Pagina_model->getSliders(),
-			'populares' => $this->Pagina_model->getCursosPopulares()
+			'populares' => $this->Pagina_model->getCursosPopulares(),
+			'servicios' => $this->Pagina_model->getServicios()
 		);
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');

@@ -29,9 +29,18 @@ class Cursos_model extends CI_Model
 	}
 	public function getCurso($id)
 	{
-		$this->db->cache_on();
-		$this->db->select("c.*");
+		
+		$this->db->select("c.*,
+						   p.nombre as profesorNombre,
+						   p.primerApellido as profesorApellido,
+						   p.primerApellido as profesorApellido,
+						   ms.nombre as status,
+						   ms2.nombre as estadoPopular,
+						 ");
 		$this->db->from("cursos c");
+		$this->db->join("profesores p", "c.id_profesor = p.id");
+		$this->db->join("menu_status ms", "c.idStatus = ms.id");
+		$this->db->join("menu_status ms2", "c.popular = ms2.id");
 		$this->db->where("c.id", $id);
 		$resultado = $this->db->get();
 		return $resultado->row();;
@@ -54,6 +63,7 @@ class Cursos_model extends CI_Model
 		$this->db->cache_on();
 		$this->db->select("p.id, p.nombre, p.segundoNombre, p.primerApellido, p.segundoApellido");
 		$this->db->from("profesores p");
+		$this->db->where("idStatus",1);
 		$resultados = $this->db->get();
 		return $resultados->result();
 	}

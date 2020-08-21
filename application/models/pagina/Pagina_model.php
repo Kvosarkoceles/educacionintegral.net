@@ -96,5 +96,24 @@ class Pagina_model extends CI_Model
 
 		
 	}
-
+	public function getNosotros()
+	{
+		 $this->db->cache_on();
+		$this->db->select("n.*");
+		$this->db->from("nosotros n");
+		$this->db->where("idStatus", 1);
+		$this->db->limit(3); 
+		$resultados = $this->db->get();
+		return $resultados->result();
+	}
+	public function getServicios()
+	{
+		
+		$this->db->cache_on(); 
+		$this->db->select("s.*");
+		$this->db->from("servicios s");
+		$this->db->where("idStatus", 1);
+		$resultados = $this->db->get();
+		return $resultados->result();
+	}
 }

@@ -1,5 +1,4 @@
 <!-- Header -->
-
 <header class="header d-flex flex-row">
 	<div class="header_content d-flex flex-row align-items-center">
 		<!-- Logo -->
@@ -13,11 +12,11 @@
 		<nav class="main_nav_container">
 			<div class="main_nav">
 				<ul class="main_nav_list">
-					<li class="main_nav_item"><a href="/">Inicio </a></li>
-					<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
-					<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
-					<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
-					<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
+					<li class="main_nav_item"><a href="<?php echo base_url(); ?>">Inicio </a></li>
+					<li class="main_nav_item"><a href="<?php echo base_url(); ?>nosotros">Nosotros</a></li>
+					<li class="main_nav_item"><a href="<?php echo base_url(); ?>cursos">Cursos</a></li>
+					<li class="main_nav_item"><a href="<?php echo base_url(); ?>profesores">Profesores</a></li>
+					<li class="main_nav_item"><a href="<?php echo base_url(); ?>noticias">Noticias</a></li>
 					<!-- <li class="main_nav_item"><a href="/">Contacto</a></li> -->
 				</ul>
 			</div>
@@ -47,11 +46,11 @@
 	<div class="menu_inner menu_mm">
 		<div class="menu menu_mm">
 			<ul class="menu_list menu_mm">
-				<li class="main_nav_item"><a href="/">Inicio</a></li>
-				<li class="main_nav_item"><a href="/nosotros">Nosotros</a></li>
-				<li class="main_nav_item"><a href="/cursos">Cursos</a></li>
-				<li class="main_nav_item"><a href="/profesores">Profesores</a></li>
-				<li class="main_nav_item"><a href="/noticias">Noticias</a></li>
+				<li class="main_nav_item"><a href="<?php echo base_url(); ?>">Inicio</a></li>
+				<li class="main_nav_item"><a href="<?php echo base_url(); ?>nosotros">Nosotros</a></li>
+				<li class="main_nav_item"><a href="<?php echo base_url(); ?>cursos">Cursos</a></li>
+				<li class="main_nav_item"><a href="<?php echo base_url(); ?>profesores">Profesores</a></li>
+				<li class="main_nav_item"><a href="<?php echo base_url(); ?>noticias">Noticias</a></li>
 			<!-- 	<li class="main_nav_item"><a href="/">Contacto</a></li> -->
 			</ul>
 

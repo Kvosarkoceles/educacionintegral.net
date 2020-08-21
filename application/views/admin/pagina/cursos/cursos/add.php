@@ -66,7 +66,7 @@
                       <label>Status</label>
                       <select class="form-control" name="status" id="status">
                         <option value="1">Activado</option>
-                        <option value="o"> Desactivado</option>
+                        <option value="2"> Desactivado</option>
                       </select>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
                       <label>Popular</label>
                       <select class="form-control" name="popular" id="popular">
                         <option value="1">Activado</option>
-                        <option value="o"> Desactivado</option>
+                        <option value="2"> Desactivado</option>
                       </select>
                     </div>
                   </div>

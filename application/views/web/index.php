@@ -15,8 +15,8 @@
 				<?php endforeach; ?>
 			<?php endif; ?>
 		</div>
-		<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">anterior</span></div>
-		<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">siguiente</span></div>
+		<!--<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">anterior</span></div>
+		<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">siguiente</span></div> -->	
 	</div>
 	<!-- Cursos, bilbioteca, profesores> -->
 	<div class="hero_boxes">
@@ -133,14 +133,22 @@
 				</div>
 			</div>
 			<div class="row services_row">
+
+
+			<?php if (!empty($servicios)) : ?>
+				<?php foreach ($servicios as $servicio) : ?>
+
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
-						<img src="<?php echo base_url(); ?>assets/images/earth-globe.svg" alt="">
+						<img src="<?php echo base_url(); ?><?php echo $servicio->imagen; ?>" alt="">
 					</div>
-					<h3>Cursos en línea</h3>
-					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
+					<h3><?php echo $servicio->nombre; ?></h3>
+					<p><?php echo $servicio->texto; ?></p>
 				</div>
-				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+
+				<?php endforeach; ?>
+			<?php endif; ?>
+				<!-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 					<div class="icon_container d-flex flex-column justify-content-end">
 						<img src="<?php echo base_url(); ?>assets/images/exam.svg" alt="">
 					</div>
@@ -174,7 +182,7 @@
 					</div>
 					<h3>Diploma de graduación</h3>
 					<p>Aquí va texto informativo, o datos que se quieran proporcionar, o en su defecto especificaciones, o ventas de este curso, también testimonios personales como características generales de lo que se quiere ofrecer, es texto simple y corto.</p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
